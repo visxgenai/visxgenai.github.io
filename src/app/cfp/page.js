@@ -35,11 +35,7 @@ export default function CFP() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-2 font-lato">
-      <h1 className="text-4xl text-gray-800 mb-6">Call for Papers</h1>
-
-      {/* Call for Participants Section */}
-      <section className="mb-8">
-        <h2 className="text-2xl mb-4">Call for Participants</h2>
+      <h1 className="text-4xl text-gray-800 mb-6">Call for Participants</h1>
         <p className="mb-6">
           We invite participation through two submission tracks: short paper and
           mini-challenge. Both are opportunities to showcase novel ideas and
@@ -47,21 +43,12 @@ export default function CFP() {
           visualization, generative AI, and agentic systems.
         </p>
 
-        {/* Important Dates */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Important Dates</h2>
-          <ul className="list-none pl-0 mb-4">
-            <li className="mb-2">
-              Paper Submission Deadline: August 20, 2025, AOE
-            </li>
-            <li className="mb-2">Author Notification: September 1, 2025</li>
-            <li className="mb-2">Camera-Ready Deadline: October 1, 2025</li>
-          </ul>
-        </section>
+      {/* Call for Participants Section */}
+      <section className="mb-8">
 
         {/* Paper Submission Subsection */}
         <div className="mb-8">
-          <h3 className="text-xl mb-3">Paper Submission</h3>
+          <h2 className="text-2xl mb-4">Paper Submission</h2>
           <p className="mb-4">
             We invite short papers (2–4 pages, non-archival). Submissions will
             be reviewed by at least two reviewers. Accepted papers will be
@@ -76,7 +63,7 @@ export default function CFP() {
 
           {/* VIS X GenAI Interpretability Topic */}
           <div className="mb-6">
-            <h4 className="text-lg font-semibold mb-2">
+            <h4 className="font-semibold mb-2">
               VIS X GenAI Interpretability
             </h4>
             <ul className="list-disc pl-5 mb-4">
@@ -165,7 +152,7 @@ export default function CFP() {
 
           {/* Agentic Systems and VIS Topic */}
           <div className="mb-6">
-            <h4 className="text-lg font-semibold mb-2">
+            <h4 className="font-semibold mb-2">
               Agentic Systems and VIS
             </h4>
             <ul className="list-disc pl-5 mb-4">
@@ -194,19 +181,19 @@ export default function CFP() {
           </div>
 
           {/* Submission & Review */}
-          <div className="mb-6">
+          {/* <div className="mb-6">
             <h4 className="text-lg font-semibold mb-2">Submission & Review</h4>
             <p>
               Submission will be made via PCS. Each paper will receive at least
               two reviews. Accepted papers will be presented and published on
               the workshop website.
             </p>
-          </div>
+          </div> */}
         </div>
 
         {/* Mini-Challenge Subsection */}
         <div className="mb-8">
-          <h3 className="text-xl font-semibold mb-3">Mini-Challenge</h3>
+          <h2 className="text-2xl mb-4">Mini-Challenge</h2>
           <p className="mb-4">
             Inspired by challenges like ImageNet in computer vision and HELM in
             language models, our mini-challenge invites participants to build or
