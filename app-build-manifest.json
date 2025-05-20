@@ -1,0 +1,54 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-8f14a0b048916c48.js",
+      "static/chunks/4bd1b696-18452535c1c4862d.js",
+      "static/chunks/684-14bb0cd51f8ebbd3.js",
+      "static/chunks/main-app-06a3cfeec243e990.js",
+      "static/chunks/app/_not-found/page-cd1726d1b4a7e279.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-8f14a0b048916c48.js",
+      "static/chunks/4bd1b696-18452535c1c4862d.js",
+      "static/chunks/684-14bb0cd51f8ebbd3.js",
+      "static/chunks/main-app-06a3cfeec243e990.js",
+      "static/css/d8c58d50804a83f1.css",
+      "static/chunks/app/layout-e75a3cd7028c5756.js"
+    ],
+    "/agent-playground/page": [
+      "static/chunks/webpack-8f14a0b048916c48.js",
+      "static/chunks/4bd1b696-18452535c1c4862d.js",
+      "static/chunks/684-14bb0cd51f8ebbd3.js",
+      "static/chunks/main-app-06a3cfeec243e990.js",
+      "static/chunks/app/agent-playground/page-caffc96397593cb6.js"
+    ],
+    "/cfp/page": [
+      "static/chunks/webpack-8f14a0b048916c48.js",
+      "static/chunks/4bd1b696-18452535c1c4862d.js",
+      "static/chunks/684-14bb0cd51f8ebbd3.js",
+      "static/chunks/main-app-06a3cfeec243e990.js",
+      "static/chunks/app/cfp/page-1a95a100ac42611c.js"
+    ],
+    "/submit/page": [
+      "static/chunks/webpack-8f14a0b048916c48.js",
+      "static/chunks/4bd1b696-18452535c1c4862d.js",
+      "static/chunks/684-14bb0cd51f8ebbd3.js",
+      "static/chunks/main-app-06a3cfeec243e990.js",
+      "static/chunks/app/submit/page-5d5aee2ea5473944.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-8f14a0b048916c48.js",
+      "static/chunks/4bd1b696-18452535c1c4862d.js",
+      "static/chunks/684-14bb0cd51f8ebbd3.js",
+      "static/chunks/main-app-06a3cfeec243e990.js",
+      "static/chunks/app/page-3148fe77b90c8313.js"
+    ],
+    "/vision/page": [
+      "static/chunks/webpack-8f14a0b048916c48.js",
+      "static/chunks/4bd1b696-18452535c1c4862d.js",
+      "static/chunks/684-14bb0cd51f8ebbd3.js",
+      "static/chunks/main-app-06a3cfeec243e990.js",
+      "static/chunks/app/vision/page-d0e0caf4dea6b495.js"
+    ]
+  }
+}

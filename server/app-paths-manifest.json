@@ -1,0 +1,9 @@
+{
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/agent-playground/page": "app/agent-playground/page.js",
+  "/cfp/page": "app/cfp/page.js",
+  "/submit/page": "app/submit/page.js",
+  "/page": "app/page.js",
+  "/vision/page": "app/vision/page.js"
+}
