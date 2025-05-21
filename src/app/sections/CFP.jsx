@@ -181,7 +181,7 @@ export default function CFP() {
           </div>
 
           {/* Submission & Review */}
-          <div className="mb-6">
+          {/* <div className="mb-6">
             <h4 className="text-2xl mb-4 font-bold">Submission & Review</h4>
             <p>
               Submissions will be evaluated based on several key criteria to ensure high quality and relevance to the workshop’s focus. 
@@ -194,7 +194,7 @@ export default function CFP() {
               All submissions will undergo double-blind review by a program committee comprising experts from both the visualization and AI interpretability communities to ensure balanced evaluation.
 
             </p>
-          </div>
+          </div> */}
         </div>
 
 

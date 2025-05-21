@@ -1,21 +1,20 @@
 export default function Home() {
     return (
       <section id="home" className="mb-5">
-        {/* container must be relative so its children can overlap */}
+        {/* Relative container for background and foreground layers */}
         <div className="relative rounded-lg overflow-hidden h-[500px]">
-          {/* Background image layer */}
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: "url('/images/visxgenai.png')",
-              backgroundBlendMode: 'overlay',
-              backgroundColor: 'rgb(255, 255, 255)',
-            }}
-          >
-            <div className="absolute inset-0 bg-black/2" />
+          {/* Background image layer (absolute, fills entire container) */}
+          <div className="absolute inset-0 w-full h-full">
+            <img
+              src="/bg.png"
+              alt="Challenge"
+              className="w-full h-full object-cover"
+            />
+            {/* Optional dark overlay */}
+            <div className="absolute inset-0 bg-white/55" />
           </div>
   
-          {/* Text layer */}
+          {/* Text content layer (relative, above image) */}
           <div className="relative z-10 flex flex-col justify-center items-center h-full p-6 text-black">
             <header className="flex justify-center items-center w-full mb-10">
               <h1
@@ -45,13 +44,13 @@ export default function Home() {
             </header>
             <p
               className="text-xl text-center"
-              style={{ fontSize: `clamp(0.5rem, 5vw, 1.2rem)` }}
+              style={{ fontSize: `clamp(0.8rem, 2vw, 1.2rem)` }}
             >
               IEEE VIS'2025 | November, 2025 | Vienna, Austria
             </p>
           </div>
         </div>
       </section>
-    )
+    );
   }
   

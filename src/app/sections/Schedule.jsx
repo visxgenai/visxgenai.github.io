@@ -23,7 +23,7 @@ export default function Schedule() {
             <tr>
               <td className="px-4 py-2 align-top font-bold">
                 Vienna Time (UTC+2)<br />
-                <span className="text-sm text-gray-600">(10 min)</span>
+                {/* <span className="text-sm text-gray-600">(10 min)</span> */}
               </td>
               <td className="px-4 py-2 font-bold">
                 Events

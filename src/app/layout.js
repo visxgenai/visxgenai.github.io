@@ -9,6 +9,9 @@ export const metadata = {
   title: "VISxGenAI",
   description:
     "Workshop on GenAI, Agents and the Future of VIS",
+    icons: {
+      icon: "/icon.png",
+    },
 };
 
 export default function RootLayout({ children }) {

@@ -29,7 +29,7 @@ export default function ResponsiveNavbar() {
     // { name: 'Vision', href: '/vision' },
     // { name: 'Vision', href: '#vision' },
     // { name: 'Agent playground', href: '/agent-playground' },
-    { name: 'Program Committee', href: '#pc' },
+    // { name: 'Program Committee', href: '#pc' },
     { name: 'Schedule', href: '#schedule' },
     { name: 'Organizers', href: '#organizers' },
     { name: 'Contact', href: '#contact' },
@@ -81,6 +81,7 @@ export default function ResponsiveNavbar() {
         <div className="flex justify-between h-16">
           {/* Logo/Home link */}
           <div className="flex-shrink-0 flex items-center">
+            {/* <img src="/icon.png" alt="Logo" className="w-10 h-10 mr-8" /> */}
             <Link
               href="/"
               className="text-[#333] text-xl md:text-2xl font-bold"

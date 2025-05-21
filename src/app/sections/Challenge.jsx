@@ -1,7 +1,7 @@
 export default function Challenge() {
     return (
         <section className="section" id="challenge">
-        
+            
           <h2 className="text-2xl mb-4 font-bold">Mini-Challenge</h2>
           <p className="mb-4">
             Inspired by challenges like ImageNet in computer vision and HELM in
@@ -16,6 +16,7 @@ export default function Challenge() {
             datasets, templates, and submission instructions—will be released
             soon.
           </p>
+          <img src="/challenge.png" alt="Challenge" className="w-full h-96 object-contain" />
           <p className="font-semibold italic">Stay tuned!</p>
         </section>
     );

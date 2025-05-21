@@ -168,7 +168,7 @@ export default function AIVisualizationWorkshop() {
       <CFP />
       <Challenge />
       {/* Program Overview */}
-      <PC />
+      {/* <PC /> */}
       <Schedule />
       <Organizers />
       {/* <section>
