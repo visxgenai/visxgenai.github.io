@@ -1,6 +1,6 @@
  export default function Schedule() {
     return (
-        <section className="mb-8" id="schedule">
+        <section className="mb-8 section" id="schedule">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Schedule 
             </h2>

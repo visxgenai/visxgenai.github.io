@@ -1,10 +1,21 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function ResponsiveNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [bgOpacity, setBgOpacity] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const y = window.scrollY;
+      setBgOpacity(Math.min(y / 200, 1));
+    };
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navItems = [
     { name: 'VISxGenAI', href: '/' },
@@ -23,7 +34,13 @@ export default function ResponsiveNavbar() {
   ];
 
   return (
-    <nav className="bg-[#eff3f7] border-b border-[#c1d1ea]">
+    <nav
+      className="fixed top-0 w-full z-50 py-4 px-50 font-sans text-lg"
+      style={{
+        transition: 'background-color 0.3s ease',
+        backgroundColor: `rgba(255, 255, 255, ${bgOpacity})`
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo/Home link */}
@@ -32,7 +49,7 @@ export default function ResponsiveNavbar() {
               href="/"
               className="text-[#333] text-xl md:text-2xl"
             >
-              VISxGenAI
+              VIS x GenAI
             </Link>
           </div>
 
@@ -72,7 +89,7 @@ export default function ResponsiveNavbar() {
 
       {/* Mobile menu, show/hide based on menu state */}
       {isMenuOpen && (
-        <div className="md:hidden">
+        <div className="md:hidden bg-white">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.slice(1).map((item) => (
               <Link

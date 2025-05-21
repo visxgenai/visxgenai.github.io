@@ -1,7 +1,7 @@
 
 export default function Dates() {
   return (
-    <section className="mb-8" id="important-dates">
+    <section className="mb-8 section" id="important-dates">
     <h2 className="text-3xl font-bold text-gray-800 mb-4">
       Important Dates
     </h2>

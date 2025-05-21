@@ -1,6 +1,6 @@
 export default function Vision() {
     return (
-      <section className="mb-8" id="vision">
+      <section className="mb-8 section" id="vision">
         <h1 className="text-3xl mb-4 font-bold text-gray-800">Our Vision</h1>
   
         <div className="bg-white mb-6">

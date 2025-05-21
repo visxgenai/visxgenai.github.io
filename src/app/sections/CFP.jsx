@@ -34,7 +34,7 @@ export default function CFP() {
   };
 
   return (
-    <div className="mb-8" id="cfp">
+    <div className="mb-8 section" id="cfp">
       <h1 className="text-3xl font-bold text-gray-800 mb-4">Call for Participants</h1>
         <p className="mb-5">
           We invite participation through two submission tracks: short paper and

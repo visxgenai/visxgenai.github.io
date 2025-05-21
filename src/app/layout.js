@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ResponsiveNavbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import Home from "./sections/Home";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,9 +14,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="flex flex-col min-h-screen">
-          <ResponsiveNavbar />
+      <body className={inter.className} >
+        <div className="flex flex-col min-h-screen bg-[#eff3f7]">
+          <div className="fixed top-0 left-0 right-0 z-50 bg-white">
+            <ResponsiveNavbar />
+          </div>
+          <Home />
           <main className="flex-grow container mx-auto px-4 py-2 mt-1">
             {children}
           </main>

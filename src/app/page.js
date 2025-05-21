@@ -5,6 +5,7 @@ import PC from "./sections/PC";
 import Organizers from "./sections/Organizers";
 import Vision from "./sections/Vision";
 import Schedule from "./sections/Schedule";
+import Home from "./sections/Home";
 export default function AIVisualizationWorkshop() {
   // Example visualization articles with their corresponding letters
   const exampleArticles = [
@@ -68,8 +69,9 @@ export default function AIVisualizationWorkshop() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-2 font-lato">
+      {/* <Home /> */}
       {/* Header with logo */}
-      <header className="flex justify-between items-center mb-6">
+      {/* <header className="flex justify-between items-center mb-6">
         <h1 className="text-4xl text-gray-800">
           1<sup>st</sup> Workshop on
           <br />
@@ -91,14 +93,14 @@ export default function AIVisualizationWorkshop() {
             />
           </svg>
         </div>
-      </header>
+      </header> */}
 
       {/* Date and Location */}
-      <div className="mb-6 text-gray-700">
+      {/* <div className="mb-6 text-gray-700">
         <p className="text-xl">
           November x, 2025 at IEEE VIS in Vienna, Austria
         </p>
-      </div>
+      </div> */}
 
       {/* Introduction */}
       <Intro />
