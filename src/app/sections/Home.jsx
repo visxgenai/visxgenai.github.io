@@ -19,7 +19,7 @@ export default function Home() {
           <div className="relative z-10 flex flex-col justify-center items-center h-full p-6 text-black">
             <header className="flex justify-center items-center w-full mb-10">
               <h1
-                className="font-bold"
+                className="font-bold text-gray-800"
                 style={{ fontSize: `clamp(1.25rem, 4vw, 3rem)` }}
               >
                 1<sup>st</sup> Workshop on
@@ -45,7 +45,7 @@ export default function Home() {
             </header>
             <p
               className="text-xl text-center"
-              style={{ fontSize: `clamp(0.5rem, 5vw, 1rem)` }}
+              style={{ fontSize: `clamp(0.5rem, 5vw, 1.2rem)` }}
             >
               IEEE VIS'2025 | November, 2025 | Vienna, Austria
             </p>

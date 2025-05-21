@@ -1,6 +1,7 @@
 export default function Intro() {
     return (
-        <section className="mb-8 section" id="about">
+        <section className="section" id="about">
+          <h1 className="text-3xl font-bold text-gray-800 mb-4">About the Workshop</h1>
         <p className="text-gray-700 mb-4">
           The rapid evolution of generative AI and intelligent agents is
           transforming how we interact with, understand, and visualize data. As

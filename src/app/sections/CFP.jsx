@@ -48,7 +48,7 @@ export default function CFP() {
 
         {/* Paper Submission Subsection */}
         <div className="mb-5">
-          <h2 className="text-2xl mb-4">Paper Submission</h2>
+          <h2 className="text-2xl mb-4 font-bold">Paper Submission</h2>
           <p className="mb-4">
             We invite short papers (2–4 pages, non-archival). Submissions will
             be reviewed by at least two reviewers. Accepted papers will be
@@ -63,7 +63,7 @@ export default function CFP() {
 
           {/* VIS X GenAI Interpretability Topic */}
           <div className="mb-5">
-            <h4 className="font-semibold mb-2">
+            <h4 className="mb-2 font-bold">
               VIS X GenAI Interpretability
             </h4>
             <ul className="list-disc pl-5 mb-4">
@@ -81,7 +81,7 @@ export default function CFP() {
                     <span className="ml-1">Example papers</span>
                   </button>
                   {openDropdowns.genaiInterpretability1 && (
-                    <ul className="list-disc pl-8 mt-2 text-sm text-gray-700 bg-gray-50 p-2 rounded">
+                    <ul className="list-disc pl-8 mt-2 text-sm text-gray-700 p-2 rounded">
                       {examplePapers.genaiInterpretability1.map(
                         (paper, index) => (
                           <li key={index} className="mb-1">
@@ -108,7 +108,7 @@ export default function CFP() {
                     <span className="ml-1">Example papers</span>
                   </button>
                   {openDropdowns.genaiInterpretability2 && (
-                    <ul className="list-disc pl-8 mt-2 text-sm text-gray-700 bg-gray-50 p-2 rounded">
+                    <ul className="list-disc pl-8 mt-2 text-sm text-gray-700 p-2 rounded">
                       {examplePapers.genaiInterpretability2.map(
                         (paper, index) => (
                           <li key={index} className="mb-1">
@@ -135,7 +135,7 @@ export default function CFP() {
                     <span className="ml-1">Example papers</span>
                   </button>
                   {openDropdowns.genaiInterpretability3 && (
-                    <ul className="list-disc pl-8 mt-2 text-sm text-gray-700 bg-gray-50 p-2 rounded">
+                    <ul className="list-disc pl-8 mt-2 text-sm text-gray-700 p-2 rounded">
                       {examplePapers.genaiInterpretability3.map(
                         (paper, index) => (
                           <li key={index} className="mb-1">
@@ -152,7 +152,7 @@ export default function CFP() {
 
           {/* Agentic Systems and VIS Topic */}
           <div className="mb-3">
-            <h4 className="font-semibold mb-2">
+            <h4 className="mb-2 font-bold">
               Agentic Systems and VIS
             </h4>
             <ul className="list-disc pl-5 mb-3">
@@ -181,34 +181,23 @@ export default function CFP() {
           </div>
 
           {/* Submission & Review */}
-          {/* <div className="mb-6">
-            <h4 className="text-lg font-semibold mb-2">Submission & Review</h4>
+          <div className="mb-6">
+            <h4 className="text-2xl mb-4 font-bold">Submission & Review</h4>
             <p>
-              Submission will be made via PCS. Each paper will receive at least
-              two reviews. Accepted papers will be presented and published on
-              the workshop website.
+              Submissions will be evaluated based on several key criteria to ensure high quality and relevance to the workshop’s focus. 
+              Papers will be assessed on: (1) novelty and originality of the contribution; 
+              (2) potential impact on frontier model development; 
+              (3) technical quality of visualization techniques or systems; 
+              (4) interdisciplinary relevance to VIS and GenAI communities; and 
+              (5) clarity of presentation. For demos and systems papers, we will additionally review the submitted demos for usability and scalability to real-world frontier model understanding tasks. 
+              Position papers will be judged on their potential to stimulate discussion and inform future research directions. 
+              All submissions will undergo double-blind review by a program committee comprising experts from both the visualization and AI interpretability communities to ensure balanced evaluation.
+
             </p>
-          </div> */}
+          </div>
         </div>
 
-        {/* Mini-Challenge Subsection */}
-        <div className="mb-6">
-          <h2 className="text-2xl mb-4">Mini-Challenge</h2>
-          <p className="mb-4">
-            Inspired by challenges like ImageNet in computer vision and HELM in
-            language models, our mini-challenge invites participants to build or
-            adapt AI agents that can automatically analyze datasets and generate
-            visual data reports.
-          </p>
-          <p className="mb-4">
-            The goal is to benchmark and accelerate progress in agent-based data
-            analysis and communication. We will provide a starter kit and
-            evaluation setup to support participants. More details—including
-            datasets, templates, and submission instructions—will be released
-            soon.
-          </p>
-          <p className="font-semibold italic">Stay tuned!</p>
-        </div>
+
       </section>
     </div>
   );

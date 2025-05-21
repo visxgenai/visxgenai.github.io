@@ -6,6 +6,8 @@ import Organizers from "./sections/Organizers";
 import Vision from "./sections/Vision";
 import Schedule from "./sections/Schedule";
 import Home from "./sections/Home";
+import Challenge from "./sections/Challenge";
+import Contact from "./sections/Contact";
 export default function AIVisualizationWorkshop() {
   // Example visualization articles with their corresponding letters
   const exampleArticles = [
@@ -123,7 +125,7 @@ export default function AIVisualizationWorkshop() {
       </section> */}
 
       {/* Example Articles */}
-      <section className="mb-8">
+      {/* <section className="mb-8">
         <p className="text-gray-700 mb-4">
           Example interactive visualization articles that explain general
           concepts and communicate experimental insights when playing with AI
@@ -141,10 +143,10 @@ export default function AIVisualizationWorkshop() {
             </li>
           ))}
         </ul>
-      </section>
+      </section> */}
 
       {/* Important Dates */}
-      <Dates />
+
       {/* <section className="mb-8" id="important-dates">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
           Important Dates
@@ -161,9 +163,10 @@ export default function AIVisualizationWorkshop() {
           </li>
         </ul>
       </section> */}
-
+      <Dates />
       {/* <Vision /> */}
       <CFP />
+      <Challenge />
       {/* Program Overview */}
       <PC />
       <Schedule />
@@ -174,6 +177,7 @@ export default function AIVisualizationWorkshop() {
         </h2>
         <p className="text-gray-700">Coming soon!</p>
       </section> */}
+      <Contact />
     </div>
   );
 }

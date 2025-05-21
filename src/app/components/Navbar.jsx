@@ -6,6 +6,7 @@ import Link from 'next/link';
 export default function ResponsiveNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [bgOpacity, setBgOpacity] = useState(0);
+  const [activeItem, setActiveItem] = useState('VIS x GenAI'); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,24 +19,59 @@ export default function ResponsiveNavbar() {
   }, []);
 
   const navItems = [
-    { name: 'VISxGenAI', href: '/' },
-    // { name: 'About', href: '#about' },
+    // { name: 'VISxGenAI', href: '/' },
+    { name: 'About', href: '#about' },
     // { name: 'Call for Participants', href: '/cfp' },
+    { name: 'Dates', href: '#important-dates' },
     { name: 'Call for Papers', href: '#cfp' },
-    
+    { name: 'Challenge', href: '#challenge' },
     // { name: 'Submit', href: '/submit' },
-    { name: 'Important Dates', href: '#important-dates' },
     // { name: 'Vision', href: '/vision' },
-    { name: 'Vision', href: '#vision' },
+    // { name: 'Vision', href: '#vision' },
     // { name: 'Agent playground', href: '/agent-playground' },
     { name: 'Program Committee', href: '#pc' },
     { name: 'Schedule', href: '#schedule' },
+    { name: 'Organizers', href: '#organizers' },
+    { name: 'Contact', href: '#contact' },
 
   ];
 
+    useEffect(() => {
+      const nav = document.querySelector('nav');
+      const exampleSection = document.getElementById(navItems[0].href.slice(1));
+      const marginTop = parseInt(
+        getComputedStyle(exampleSection).scrollMarginTop,
+        10
+      );
+      const onScroll = () => {
+        const scrollPos = window.scrollY + window.innerHeight / 2 - marginTop;
+        for (const item of navItems) {
+          const id = item.href.slice(1);
+          const section = document.getElementById(id);
+          if (!section) continue;
+          const top = section.offsetTop;
+          const bottom = top + section.offsetHeight;
+          if (scrollPos >= top && scrollPos < bottom) {
+            setActiveItem(item.name);
+            break;
+          }
+        }
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll(); 
+      return () => window.removeEventListener('scroll', onScroll);
+    }, [navItems]);
+
+    const linkClasses = (name) =>
+      `px-3 py-2 rounded-md text-base transition-colors ${
+        activeItem === name
+          ? 'text-[#333] font-bold'
+          : 'text-[#333]'
+      } hover:bg-[#ffcc33]`;
+
   return (
     <nav
-      className="fixed top-0 w-full z-50 py-4 px-50 font-sans text-lg"
+      className="fixed top-0 w-full z-50 py-4 px-10 font-sans text-lg"
       style={{
         transition: 'background-color 0.3s ease',
         backgroundColor: `rgba(255, 255, 255, ${bgOpacity})`
@@ -47,19 +83,22 @@ export default function ResponsiveNavbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link
               href="/"
-              className="text-[#333] text-xl md:text-2xl"
+              className="text-[#333] text-xl md:text-2xl font-bold"
             >
               VIS x GenAI
             </Link>
           </div>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-1">
             {navItems.slice(1).map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="px-3 py-2 rounded-md text-[#333] hover:bg-[#d0dbed] transition-colors text-lg"
+                className={linkClasses(item.name)}
+                onClick={() => {
+                  setActiveItem(item.name);
+                }}
               >
                 {item.name}
               </Link>
