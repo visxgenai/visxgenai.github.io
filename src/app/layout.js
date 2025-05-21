@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <main className="flex-grow container mx-auto px-4 py-2 mt-1">
             {children}
           </main>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </body>
     </html>

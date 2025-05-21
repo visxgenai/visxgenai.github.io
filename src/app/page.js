@@ -1,3 +1,10 @@
+import Dates from "./sections/Dates";
+import Intro from "./sections/Intro";
+import CFP from "./sections/CFP";
+import PC from "./sections/PC";
+import Organizers from "./sections/Organizers";
+import Vision from "./sections/Vision";
+import Schedule from "./sections/Schedule";
 export default function AIVisualizationWorkshop() {
   // Example visualization articles with their corresponding letters
   const exampleArticles = [
@@ -94,7 +101,8 @@ export default function AIVisualizationWorkshop() {
       </div>
 
       {/* Introduction */}
-      <section className="mb-8">
+      <Intro />
+      {/* <section className="mb-8">
         <p className="text-gray-700 mb-4">
           The rapid evolution of generative AI and intelligent agents is
           transforming how we interact with, understand, and visualize data. As
@@ -110,7 +118,7 @@ export default function AIVisualizationWorkshop() {
           What novel interfaces will emerge in agent-augmented analytics? How
           might generative AI reshape visualization authoring and consumption?
         </p>
-      </section>
+      </section> */}
 
       {/* Example Articles */}
       <section className="mb-8">
@@ -134,7 +142,8 @@ export default function AIVisualizationWorkshop() {
       </section>
 
       {/* Important Dates */}
-      <section className="mb-8">
+      <Dates />
+      {/* <section className="mb-8" id="important-dates">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
           Important Dates
         </h2>
@@ -149,15 +158,20 @@ export default function AIVisualizationWorkshop() {
             October 1, 2025: Camera Ready Deadline
           </li>
         </ul>
-      </section>
+      </section> */}
 
+      {/* <Vision /> */}
+      <CFP />
       {/* Program Overview */}
-      <section>
+      <PC />
+      <Schedule />
+      <Organizers />
+      {/* <section>
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
           Program Overview
         </h2>
         <p className="text-gray-700">Coming soon!</p>
-      </section>
+      </section> */}
     </div>
   );
 }

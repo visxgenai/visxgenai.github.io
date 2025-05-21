@@ -8,10 +8,18 @@ export default function ResponsiveNavbar() {
 
   const navItems = [
     { name: 'VISxGenAI', href: '/' },
-    { name: 'Call for Participants', href: '/cfp' },
+    // { name: 'About', href: '#about' },
+    // { name: 'Call for Participants', href: '/cfp' },
+    { name: 'Call for Papers', href: '#cfp' },
+    
     // { name: 'Submit', href: '/submit' },
+    { name: 'Important Dates', href: '#important-dates' },
     // { name: 'Vision', href: '/vision' },
+    { name: 'Vision', href: '#vision' },
     // { name: 'Agent playground', href: '/agent-playground' },
+    { name: 'Program Committee', href: '#pc' },
+    { name: 'Schedule', href: '#schedule' },
+
   ];
 
   return (
