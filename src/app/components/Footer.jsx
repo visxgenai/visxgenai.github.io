@@ -1,14 +1,16 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer >
-      <div className="container mx-auto pt-10 pb-10 text-center section">
+    <footer className="bg-[#DAEAF5]">
+      <div className="container mx-auto p-8 text-center">
         <p className="text-gray-800">
-        © 2025-2026 <b>IEEE VIS GenAI, Agents and the Future of VIS Workshop 2025</b>  All Rights Reserved
+          © 2025-2026{" "}
+          <b>IEEE VIS GenAI, Agents and the Future of VIS Workshop</b>. All
+          Rights Reserved.
         </p>
       </div>
-      
+
       {/* <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex space-x-16">
