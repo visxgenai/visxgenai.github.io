@@ -11,12 +11,14 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
             {/* Optional dark overlay */}
-            <div className="absolute inset-0 bg-white/55" />
+            <div className="absolute inset-0 bg-white/65" />
           </div>
   
           {/* Text content layer (relative, above image) */}
           <div className="relative z-10 flex flex-col justify-center items-center h-full p-6 text-black">
-            <header className="flex justify-center items-center w-full mb-10">
+            <header className="flex justify-center items-center w-full mb-10"
+            transition={{ duration: 1, ease: "easeInOut" }}
+            >
               <h1
                 className="font-bold text-gray-800"
                 style={{ fontSize: `clamp(1.25rem, 4vw, 3rem)` }}

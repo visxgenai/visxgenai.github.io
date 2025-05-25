@@ -16,7 +16,7 @@ export default function Challenge() {
             datasets, templates, and submission instructions—will be released
             soon.
           </p>
-          <img src="/challenge.png" alt="Challenge" className="w-full h-96 object-contain" />
+          <img src="/challenge-bg.png" alt="Challenge" className="w-full h-96 object-contain" />
           <p className="font-semibold italic">Stay tuned!</p>
         </section>
     );
