@@ -1,29 +1,29 @@
-
 export default function Dates() {
   return (
     <section className="section" id="important-dates">
-    <h2 className="text-3xl font-bold text-gray-800 mb-4">
-      Important Dates
-    </h2>
-    <ul className="space-y-1">
-
+      <h2 className="text-3xl font-bold text-gray-800 mb-4">Important Dates</h2>
+      <ul className="space-y-1">
         <li className="text-gray-700">
-        May 30th, 2025: Call for Participation
+          <span className="font-medium">May 30th, 2025:</span> Call for
+          Participation
         </li>
         <li className="text-gray-700">
-        Aug 20, 2025, anywhere: Submission Deadline
+          <span className="font-medium">August 20th, 2025, anywhere:</span>{" "}
+          Submission Deadline
         </li>
         <li className="text-gray-700">
-        September 1, 2025: Author Notification
+          <span className="font-medium">September 1st, 2025:</span> Author
+          Notification
         </li>
         <li className="text-gray-700">
-        October 1, 2025: Camera Ready Deadline
+          <span className="font-medium">October 1st, 2025:</span> Camera Ready
+          Deadline
         </li>
         <li className="text-gray-700">
-        Nov 2nd or 3rd: Workshop Day, TBD
+          <span className="font-medium">November 2nd or 3rd:</span> Workshop
+          Day, TBD
         </li>
-
-    </ul>
-  </section>
+      </ul>
+    </section>
   );
 }

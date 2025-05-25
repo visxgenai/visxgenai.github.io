@@ -1,8 +1,14 @@
-Official wbsite for the 1st Workshop on GenAI, Agents and the future of VISVISxGenAI (2025) to be held in Vienna, Austria.
+Official website for the 1st Workshop on GenAI, Agents and the Future of VIS (VISxGenAI) 2025 to be held in Vienna, Austria.
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev

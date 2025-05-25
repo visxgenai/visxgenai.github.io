@@ -1,4 +1,5 @@
 export default function Home() {
+
     return (
       <section id="home" className="mb-5">
         {/* Relative container for background and foreground layers */}
@@ -23,36 +24,51 @@ export default function Home() {
                 className="font-bold text-gray-800"
                 style={{ fontSize: `clamp(1.25rem, 4vw, 3rem)` }}
               >
-                1<sup>st</sup> Workshop on
-                <br />
+                <div className="flex items-center justify-between">
+                  <p>
+                    1<sup>st</sup> Workshop on
+                  </p>
+                  <img
+                    src="/new_icon.png"
+                    alt="Logo"
+                    className="ml-4 mb-1"
+                    style={{
+                      width: `clamp(1.5rem, 5.5vw, 4.5rem)`,
+                      height: `clamp(1.5rem, 5.5vw, 4.5rem)`,
+                    }}
+                  />
+                </div>
                 GenAI, Agents and the Future of VIS
               </h1>
-              <div className="text-purple-300 ml-4">
-                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                  <path
-                    d="M15 10L45 50"
-                    stroke="#FF6B6B"
-                    strokeWidth="6"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M45 10L15 50"
-                    stroke="#6B66FF"
-                    strokeWidth="6"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </div>
-            </header>
-            <p
-              className="text-xl text-center"
-              style={{ fontSize: `clamp(0.8rem, 2vw, 1.2rem)` }}
-            >
-              IEEE VIS'2025 | November, 2025 | Vienna, Austria
-            </p>
-          </div>
+              {/* <div className="text-purple-300 ml-4">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <path
+                  d="M15 10L45 50"
+                  stroke="#FF6B6B"
+                  strokeWidth="6"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M45 10L15 50"
+                  stroke="#6B66FF"
+                  strokeWidth="6"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </div> */}
+            </div>
+            <div className="flex items-center">
+              <p
+                className="text-xl"
+                style={{ fontSize: `clamp(0.8rem, 2vw, 1.2rem)` }}
+              >
+                IEEE VIS 2025 <span className="ml-2 mr-2">|</span> November 2025
+                <span className="ml-2 mr-2">|</span> Vienna, Austria
+              </p>
+            </div>
+          </header>
         </div>
-      </section>
-    );
-  }
-  
+      </div>
+    </section>
+  );
+}

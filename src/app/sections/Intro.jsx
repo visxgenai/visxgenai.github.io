@@ -1,4 +1,5 @@
 export default function Intro() {
+
     return (
         <section className="section" id="about">
           <h1 className="text-3xl font-bold text-gray-800 mb-4">About the Workshop</h1>
@@ -31,3 +32,4 @@ export default function Intro() {
       </section>
     );
 }
+

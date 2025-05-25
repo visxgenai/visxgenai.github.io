@@ -9,16 +9,16 @@ export const metadata = {
   title: "VISxGenAI",
   description:
     "Workshop on GenAI, Agents and the Future of VIS",
-    icons: {
-      icon: "/icon.png",
-    },
+  icons: {
+    icon: "/fav.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className} >
-        <div className="flex flex-col min-h-screen bg-[#eff3f7]">
+        <div className="flex flex-col min-h-screen bg-[#fff]">
           <div className="fixed top-0 left-0 right-0 z-50 bg-white">
             <ResponsiveNavbar />
           </div>
