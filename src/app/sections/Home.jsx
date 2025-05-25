@@ -1,5 +1,4 @@
 export default function Home() {
-
     return (
       <section id="home" className="mb-5">
         {/* Relative container for background and foreground layers */}
@@ -15,11 +14,11 @@ export default function Home() {
             <div className="absolute inset-0 bg-white/65" />
           </div>
   
-          {/* Text content layer (relative, above image) */}
-          <div className="relative z-10 flex flex-col justify-center items-center h-full p-6 text-black">
-            <header className="flex justify-center items-center w-full mb-10"
-            transition={{ duration: 1, ease: "easeInOut" }}
-            >
+        {/* Content layer above image */}
+        <div className="relative z-10 flex flex-col justify-center items-center h-full p-6 text-black">
+          <header className="flex flex-col items-center mb-10">
+            {/* Title row */}
+            <div className="flex items-center mb-4">
               <h1
                 className="font-bold text-gray-800"
                 style={{ fontSize: `clamp(1.25rem, 4vw, 3rem)` }}
@@ -57,15 +56,15 @@ export default function Home() {
               </svg>
             </div> */}
             </div>
-            <div className="flex items-center">
-              <p
-                className="text-xl"
-                style={{ fontSize: `clamp(0.8rem, 2vw, 1.2rem)` }}
-              >
+
+            {/* Subtitle with date and location */}
+            <p
+              className="text-xl"
+              style={{ fontSize: `clamp(0.8rem, 2vw, 1.2rem)` }}
+            >
                 IEEE VIS 2025 <span className="ml-2 mr-2">|</span> November 2025
                 <span className="ml-2 mr-2">|</span> Vienna, Austria
               </p>
-            </div>
           </header>
         </div>
       </div>
