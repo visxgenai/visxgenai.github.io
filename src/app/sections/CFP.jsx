@@ -17,35 +17,38 @@ export default function CFP() {
   // Example papers data
   const examplePapers = {
     genaiInterpretability1: [
-      "Smith et al. (2024). VisLLM: A Framework for Visualizing Language Model Decision Processes",
-      "Jones & Wong (2023). Diffusion Lens: Interactive Visualizations for Understanding Image Generation",
-      "Martinez et al. (2024). Attention Flow: Visual Analysis of Transformer Attention Patterns",
+      "Smith et al. (2024). VisLLM: A Framework for Visualizing Language Model Decision Processes.",
+      "Jones & Wong (2023). Diffusion Lens: Interactive Visualizations for Understanding Image Generation.",
+      "Martinez et al. (2024). Attention Flow: Visual Analysis of Transformer Attention Patterns.",
     ],
     genaiInterpretability2: [
-      "Chen et al. (2024). Beyond Attention: New Interpretability Methods for Modern Language Models",
-      "Garcia & Kim (2023). Graph-based Visualization of LLM Knowledge Extraction",
-      "Williams et al. (2024). Visual Analytics for Multimodal Model Understanding",
+      "Chen et al. (2024). Beyond Attention: New Interpretability Methods for Modern Language Models.",
+      "Garcia & Kim (2023). Graph-based Visualization of LLM Knowledge Extraction.",
+      "Williams et al. (2024). Visual Analytics for Multimodal Model Understanding.",
     ],
     genaiInterpretability3: [
-      "Lee & Patel (2023). The Visualization Gap: Challenges for Next-Gen AI Interpretability",
-      "Thompson et al. (2024). VISAI: A Research Agenda for Visual Analytics in Generative AI",
-      "Rodriguez et al. (2024). Benchmarking Visualization Literacy for AI Interpretability Tools",
+      "Lee & Patel (2023). The Visualization Gap: Challenges for Next-Gen AI Interpretability.",
+      "Thompson et al. (2024). VISAI: A Research Agenda for Visual Analytics in Generative AI.",
+      "Rodriguez et al. (2024). Benchmarking Visualization Literacy for AI Interpretability Tools.",
     ],
   };
 
   return (
-    <div className="mb-8 section" id="cfp">
-      <h1 className="text-3xl font-bold text-gray-800 mb-4">Call for Participants</h1>
-        <p className="mb-5">
-          We invite participation through two submission tracks: short paper and
-          mini-challenge. Both are opportunities to showcase novel ideas and
-          engage with the growing community at the intersection of
-          visualization, generative AI, and agentic systems.
-        </p>
+    <div id="cfp">
+      <h1 className="text-3xl font-bold text-gray-800 mb-4">
+        Call for Participants
+      </h1>
+      <p className="mb-5">
+        We invite participation through two submission tracks:{" "}
+        <span className="font-medium">short paper</span> and{" "}
+        <span className="font-medium">mini-challenge</span>. Both are
+        opportunities to showcase novel ideas and engage with the growing
+        community at the intersection of visualization, generative AI, and
+        agentic systems.
+      </p>
 
       {/* Call for Participants Section */}
-      <section className="mb-5">
-
+      <section className="mb-6">
         {/* Paper Submission Subsection */}
         <div className="mb-5">
           <h2 className="text-2xl mb-4 font-bold">Paper Submission</h2>
@@ -63,17 +66,15 @@ export default function CFP() {
 
           {/* VIS X GenAI Interpretability Topic */}
           <div className="mb-5">
-            <h4 className="mb-2 font-bold">
-              VIS X GenAI Interpretability
-            </h4>
+            <h4 className="mb-2 font-bold">VIS X GenAI Interpretability</h4>
             <ul className="list-disc pl-5 mb-4">
               <li className="mb-3">
                 Novel visualization systems and techniques for interpreting
                 frontier generative models, such as LLMs or diffusion models
-                <div className="mt-1">
+                <div className="mt-2">
                   <button
                     onClick={() => toggleDropdown("genaiInterpretability1")}
-                    className="text-sm text-blue-600 hover:text-blue-800 flex items-center"
+                    className="text-sm text-[#407498] hover:text-[#24597E] flex items-center"
                   >
                     <span>
                       {openDropdowns.genaiInterpretability1 ? "▼" : "▶"}
@@ -81,10 +82,10 @@ export default function CFP() {
                     <span className="ml-1">Example papers</span>
                   </button>
                   {openDropdowns.genaiInterpretability1 && (
-                    <ul className="list-disc pl-8 mt-2 text-sm text-gray-700 p-2 rounded">
+                    <ul className="mt-1 pl-4 pr-4 text-sm text-gray-700 p-2 rounded border border-gray-300">
                       {examplePapers.genaiInterpretability1.map(
                         (paper, index) => (
-                          <li key={index} className="mb-1">
+                          <li key={index} className={index === 0 ? "" : "mt-1"}>
                             {paper}
                           </li>
                         )
@@ -97,10 +98,10 @@ export default function CFP() {
                 Interpretability-focused papers from the GenAI community that
                 highlight technical challenges or opportunities where
                 visualization can help
-                <div className="mt-1">
+                <div className="mt-2">
                   <button
                     onClick={() => toggleDropdown("genaiInterpretability2")}
-                    className="text-sm text-blue-600 hover:text-blue-800 flex items-center"
+                    className="text-sm text-[#407498] hover:text-[#24597E] flex items-center"
                   >
                     <span>
                       {openDropdowns.genaiInterpretability2 ? "▼" : "▶"}
@@ -108,10 +109,10 @@ export default function CFP() {
                     <span className="ml-1">Example papers</span>
                   </button>
                   {openDropdowns.genaiInterpretability2 && (
-                    <ul className="list-disc pl-8 mt-2 text-sm text-gray-700 p-2 rounded">
+                    <ul className="mt-1 pl-4 pr-4 text-sm text-gray-700 p-2 rounded border border-gray-300">
                       {examplePapers.genaiInterpretability2.map(
                         (paper, index) => (
-                          <li key={index} className="mb-1">
+                          <li key={index} className={index === 0 ? "" : "mt-1"}>
                             {paper}
                           </li>
                         )
@@ -124,10 +125,10 @@ export default function CFP() {
                 Position papers and proposals outlining research agendas,
                 benchmarks, or tools to support future collaboration between VIS
                 and interpretability researchers
-                <div className="mt-1">
+                <div className="mt-2">
                   <button
                     onClick={() => toggleDropdown("genaiInterpretability3")}
-                    className="text-sm text-blue-600 hover:text-blue-800 flex items-center"
+                    className="text-sm text-[#407498] hover:text-[#24597E] flex items-center"
                   >
                     <span>
                       {openDropdowns.genaiInterpretability3 ? "▼" : "▶"}
@@ -135,10 +136,10 @@ export default function CFP() {
                     <span className="ml-1">Example papers</span>
                   </button>
                   {openDropdowns.genaiInterpretability3 && (
-                    <ul className="list-disc pl-8 mt-2 text-sm text-gray-700 p-2 rounded">
+                    <ul className="mt-1 pl-4 pr-4 text-sm text-gray-700 p-2 rounded border border-gray-300">
                       {examplePapers.genaiInterpretability3.map(
                         (paper, index) => (
-                          <li key={index} className="mb-1">
+                          <li key={index} className={index === 0 ? "" : "mt-1"}>
                             {paper}
                           </li>
                         )
@@ -152,9 +153,7 @@ export default function CFP() {
 
           {/* Agentic Systems and VIS Topic */}
           <div className="mb-3">
-            <h4 className="mb-2 font-bold">
-              Agentic Systems and VIS
-            </h4>
+            <h4 className="mb-2 font-bold">Agentic Systems and VIS</h4>
             <ul className="list-disc pl-5 mb-3">
               <li className="mb-2">
                 Agent-augmented VIS tools: agents that recommend, generate, or
@@ -196,8 +195,6 @@ export default function CFP() {
             </p>
           </div> */}
         </div>
-
-
       </section>
     </div>
   );
