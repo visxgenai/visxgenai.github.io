@@ -33,5 +33,7 @@ html {
 }
 .section {
   scroll-margin-top: 120px;
-  margin-bottom: 32px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
