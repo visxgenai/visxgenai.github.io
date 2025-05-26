@@ -48,7 +48,7 @@ export default function CFP() {
 
         {/* Paper Submission Subsection */}
         <div className="mb-8">
-          <h2 className="text-2xl mb-4">Paper Submission</h2>
+          <h2 className="text-2xl mb-4">Track A: Paper Submission</h2>
           <p className="mb-4">
             We invite short papers (2–4 pages, non-archival). Submissions will
             be reviewed by at least two reviewers. Accepted papers will be
