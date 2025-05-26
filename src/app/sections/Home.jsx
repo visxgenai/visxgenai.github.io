@@ -6,12 +6,12 @@ export default function Home() {
           {/* Background image layer (absolute, fills entire container) */}
           <div className="absolute inset-0 w-full h-full">
             <img
-              src="/bg.png"
+              src="/bg-v.png"
               alt="Challenge"
               className="w-full h-full object-cover"
             />
             {/* Optional dark overlay */}
-            <div className="absolute inset-0 bg-white/65" />
+            <div className="absolute inset-0 bg-white/60" />
           </div>
   
         {/* Content layer above image */}
