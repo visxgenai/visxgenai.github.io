@@ -34,21 +34,7 @@ export default function CFP() {
   };
 
   return (
-    <div id="cfp">
-      <h1 className="text-3xl font-bold text-gray-800 mb-4">
-        Call for Participants
-      </h1>
-      <p className="mb-5">
-        We invite participation through two submission tracks:{" "}
-        <span className="font-medium">short paper</span> and{" "}
-        <span className="font-medium">mini-challenge</span>. Both are
-        opportunities to showcase novel ideas and engage with the growing
-        community at the intersection of visualization, generative AI, and
-        agentic systems.
-      </p>
-
-      {/* Call for Participants Section */}
-      <section className="mb-6">
+      <section  id="cfp" className="mb-6">
         {/* Paper Submission Subsection */}
         <div className="mb-5">
           <h2 className="text-2xl mb-4 font-bold">TrackA: Paper Submission</h2>
@@ -159,10 +145,7 @@ export default function CFP() {
               </li>
             </ul>
 
-            Submissions will
-            be reviewed by at least two reviewers. Accepted papers will be
-            invited to present as posters, demos, or lightning talks during the
-            workshop, and published on the workshop website. 
+
           </div>
 
           {/* Agentic Systems and VIS Topic */}
@@ -190,6 +173,5 @@ export default function CFP() {
           </div> */}
         </div>
       </section>
-    </div>
   );
 }

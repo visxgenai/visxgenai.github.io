@@ -163,10 +163,36 @@ export default function AIVisualizationWorkshop() {
           </li>
         </ul>
       </section> */}
-      <Dates />
+
       {/* <Vision /> */}
+
+
+      <div>
+      <h1 className="text-3xl font-bold text-gray-800 mb-4">
+        Call for Participants
+      </h1>
+
+            <p className="mb-5">
+        We invite participation through two submission tracks:{" "}
+        <span className="font-medium">short paper</span> and{" "}
+        <span className="font-medium">mini-challenge</span>. Both are
+        opportunities to showcase novel ideas and engage with the growing
+        community at the intersection of visualization, generative AI, and
+        agentic systems.
+      </p>
+      <div className="flex">
       <CFP />
       <Challenge />
+      </div>
+
+            Submissions will
+            be reviewed by at least two reviewers. Accepted papers will be
+            invited to present as posters, demos, or lightning talks during the
+            workshop, and published on the workshop website. 
+      </div>
+
+      <Dates />
+
       {/* Program Overview */}
       {/* <PC /> */}
       <Schedule />
