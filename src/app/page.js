@@ -7,6 +7,7 @@ import Vision from "./sections/Vision";
 import Schedule from "./sections/Schedule";
 import Home from "./sections/Home";
 import Challenge from "./sections/Challenge";
+import CallForParticipants from "./sections/CallForParticipants";
 import Contact from "./sections/Contact";
 export default function AIVisualizationWorkshop() {
   // Example visualization articles with their corresponding letters
@@ -70,7 +71,7 @@ export default function AIVisualizationWorkshop() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-2 font-lato">
+    <div className="max-w-6xl mx-auto px-4 py-2 font-lato">
       {/* <Home /> */}
       {/* Header with logo */}
       {/* <header className="flex justify-between items-center mb-6">
@@ -167,7 +168,7 @@ export default function AIVisualizationWorkshop() {
       {/* <Vision /> */}
 
 
-      <div>
+      {/* <div>
       <h1 className="text-3xl font-bold text-gray-800 mb-4">
         Call for Participants
       </h1>
@@ -189,8 +190,8 @@ export default function AIVisualizationWorkshop() {
             be reviewed by at least two reviewers. Accepted papers will be
             invited to present as posters, demos, or lightning talks during the
             workshop, and published on the workshop website. 
-      </div>
-
+      </div> */}
+      <CallForParticipants />
       <Dates />
 
       {/* Program Overview */}

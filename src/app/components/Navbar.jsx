@@ -21,10 +21,10 @@ export default function ResponsiveNavbar() {
   const navItems = [
     // { name: 'VISxGenAI', href: '/' },
     { name: "About", href: "#about" },
-    // { name: 'Call for Participants', href: '/cfp' },
+    { name: "Call for Participants", href: "#cfp" },
+    // { name: "Call for Papers", href: "#cfp" },
+    // { name: "Challenge", href: "#challenge" },
     { name: "Dates", href: "#important-dates" },
-    { name: "Call for Papers", href: "#cfp" },
-    { name: "Challenge", href: "#challenge" },
     // { name: 'Submit', href: '/submit' },
     // { name: 'Vision', href: '/vision' },
     // { name: 'Vision', href: '#vision' },

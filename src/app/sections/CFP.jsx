@@ -37,7 +37,7 @@ export default function CFP() {
       <section  id="cfp" className="mb-6">
         {/* Paper Submission Subsection */}
         <div className="mb-5">
-          <h2 className="text-2xl mb-4 font-bold">TrackA: Paper Submission</h2>
+          {/* <h2 className="text-2xl mb-4 font-bold">TrackA: Paper Submission</h2> */}
           <p className="mb-4">
             We invite short papers (2–4 pages, non-archival) that explore
             topics—across theory, systems, user studies, and applications—on GenAI interpretability or agentic VIS, including (but not limited to):
@@ -49,6 +49,7 @@ export default function CFP() {
             <ul className="list-disc pl-5 mb-4">
               <li className="mb-2">
                 <em>VIS for interpreting GenAI</em>, such as LLMs or diffusion models. 
+                <br />
                 <span
                     onClick={() => toggleDropdown("genaiInterpretability1")}
                     className="text-sm text-[#407498] hover:text-[#24597E] items-center"
@@ -75,7 +76,8 @@ export default function CFP() {
               </li>
               <li className="mb-2">
                 <em>Call for VIS from GenAI community</em> that
-                highlights challenges or opportunities where VIS can fit. <span
+                highlights challenges or opportunities where VIS can fit. <br />
+                <span
                     onClick={() => toggleDropdown("genaiInterpretability2")}
                     className="text-sm text-[#407498] hover:text-[#24597E] items-center"
                   >
@@ -100,7 +102,8 @@ export default function CFP() {
                 </div>
               </li>
               <li className="mb-2">
-                <em>Position papers for VIS and interpretability researchers.</em>  <span
+                <em>Position papers for VIS and interpretability researchers.</em>  <br />
+                <span
                     onClick={() => toggleDropdown("genaiInterpretability3")}
                     className="text-sm text-[#407498] hover:text-[#24597E] items-center"
                   >

@@ -3,7 +3,7 @@ export default function Challenge() {
     return (
         <section className="section" id="challenge">
             
-          <h2 className="text-2xl mb-4 font-bold">TrackB: Mini-Challenge</h2>
+          {/* <h2 className="text-2xl mb-4 font-bold">TrackB: Mini-Challenge</h2> */}
           <p className="mb-4">
             Inspired by challenges like ImageNet in computer vision and HELM in
             language models, our mini-challenge invites participants to build or
@@ -17,8 +17,8 @@ export default function Challenge() {
             datasets, templates, and submission instructions—will be released
             soon.
           </p>
-          <img src="/challenge-bg.png" alt="Challenge" className="w-full h-96 object-contain" />
           <p className="font-semibold italic">Stay tuned!</p>
+          <img src="/challenge-bg.png" alt="Challenge" className="w-full h-70 object-contain" />
         </section>
     );
 }
