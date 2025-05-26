@@ -53,34 +53,27 @@ export default function CFP() {
         <div className="mb-5">
           <h2 className="text-2xl mb-4 font-bold">TrackA: Paper Submission</h2>
           <p className="mb-4">
-            We invite short papers (2–4 pages, non-archival). Submissions will
-            be reviewed by at least two reviewers. Accepted papers will be
-            invited to present as posters, demos, or lightning talks during the
-            workshop, and published on the workshop website.
-          </p>
-          <p className="mb-4">
-            We encourage diverse contributions across theory, systems, user
-            studies, and applications, connecting VIS with GenAI or agentic
-            workflows. Topics include (but are not limited to):
+            We invite short papers (2–4 pages, non-archival) that explore
+            topics—across theory, systems, user studies, and applications—on GenAI interpretability or agentic VIS, including (but not limited to):
           </p>
 
           {/* VIS X GenAI Interpretability Topic */}
           <div className="mb-5">
-            <h4 className="mb-2 font-bold">VIS X GenAI Interpretability</h4>
+
             <ul className="list-disc pl-5 mb-4">
-              <li className="mb-3">
-                Novel visualization systems and techniques for interpreting
-                frontier generative models, such as LLMs or diffusion models
-                <div className="mt-2">
-                  <button
+              <li className="mb-2">
+                <em>VIS for interpreting GenAI</em>, such as LLMs or diffusion models. 
+                <span
                     onClick={() => toggleDropdown("genaiInterpretability1")}
-                    className="text-sm text-[#407498] hover:text-[#24597E] flex items-center"
+                    className="text-sm text-[#407498] hover:text-[#24597E] items-center"
                   >
                     <span>
                       {openDropdowns.genaiInterpretability1 ? "▼" : "▶"}
                     </span>
                     <span className="ml-1">Example papers</span>
-                  </button>
+                  </span>
+                <div className="mt-2">
+ 
                   {openDropdowns.genaiInterpretability1 && (
                     <ul className="mt-1 pl-4 pr-4 text-sm text-gray-700 p-2 rounded border border-gray-300">
                       {examplePapers.genaiInterpretability1.map(
@@ -94,20 +87,19 @@ export default function CFP() {
                   )}
                 </div>
               </li>
-              <li className="mb-3">
-                Interpretability-focused papers from the GenAI community that
-                highlight technical challenges or opportunities where
-                visualization can help
-                <div className="mt-2">
-                  <button
+              <li className="mb-2">
+                <em>Call for VIS from GenAI community</em> that
+                highlights challenges or opportunities where VIS can fit. <span
                     onClick={() => toggleDropdown("genaiInterpretability2")}
-                    className="text-sm text-[#407498] hover:text-[#24597E] flex items-center"
+                    className="text-sm text-[#407498] hover:text-[#24597E] items-center"
                   >
                     <span>
                       {openDropdowns.genaiInterpretability2 ? "▼" : "▶"}
                     </span>
                     <span className="ml-1">Example papers</span>
-                  </button>
+                  </span>
+                <div className="mt-2">
+
                   {openDropdowns.genaiInterpretability2 && (
                     <ul className="mt-1 pl-4 pr-4 text-sm text-gray-700 p-2 rounded border border-gray-300">
                       {examplePapers.genaiInterpretability2.map(
@@ -121,20 +113,18 @@ export default function CFP() {
                   )}
                 </div>
               </li>
-              <li className="mb-3">
-                Position papers and proposals outlining research agendas,
-                benchmarks, or tools to support future collaboration between VIS
-                and interpretability researchers
-                <div className="mt-2">
-                  <button
+              <li className="mb-2">
+                <em>Position papers for VIS and interpretability researchers.</em>  <span
                     onClick={() => toggleDropdown("genaiInterpretability3")}
-                    className="text-sm text-[#407498] hover:text-[#24597E] flex items-center"
+                    className="text-sm text-[#407498] hover:text-[#24597E] items-center"
                   >
                     <span>
                       {openDropdowns.genaiInterpretability3 ? "▼" : "▶"}
                     </span>
                     <span className="ml-1">Example papers</span>
-                  </button>
+                  </span>
+                <div className="mt-2">
+
                   {openDropdowns.genaiInterpretability3 && (
                     <ul className="mt-1 pl-4 pr-4 text-sm text-gray-700 p-2 rounded border border-gray-300">
                       {examplePapers.genaiInterpretability3.map(
@@ -148,36 +138,40 @@ export default function CFP() {
                   )}
                 </div>
               </li>
+
+              <li className="mb-2">
+                <em>Agent-augmented VIS tools</em>.
+              </li>
+              <li className="mb-2">
+                <em>VIS tools for agents</em> that agents themselves
+                can perceive, reason over, or act upon.
+              </li>
+              <li className="mb-2">
+                <em>Methods and benchmarks</em> for assessing agent performance on VIS-related tasks.
+              </li>
+              <li className="mb-2">
+                <em>Case studies and demos</em>of agent systems applied to real-world VIS problems.
+              </li>
+              <li className="mb-2">
+                <em>Vision papers on agents in VIS</em> education, immersive
+                visualizations for embodied agents, or multi-agent coordination
+                in visual reasoning.
+              </li>
             </ul>
+
+            Submissions will
+            be reviewed by at least two reviewers. Accepted papers will be
+            invited to present as posters, demos, or lightning talks during the
+            workshop, and published on the workshop website. 
           </div>
 
           {/* Agentic Systems and VIS Topic */}
-          <div className="mb-3">
-            <h4 className="mb-2 font-bold">Agentic Systems and VIS</h4>
+          {/* <div className="mb-3">
+            <h4 className="mb-2">Agentic Systems and VIS</h4>
             <ul className="list-disc pl-5 mb-3">
-              <li className="mb-2">
-                Agent-augmented VIS tools: agents that recommend, generate, or
-                evaluate visualizations for human users
-              </li>
-              <li className="mb-2">
-                VIS tools for agents: encodings and UIs that agents themselves
-                can perceive, reason over, or act upon
-              </li>
-              <li className="mb-2">
-                Benchmarks and evaluations for assessing agent performance on
-                VIS-related tasks
-              </li>
-              <li className="mb-2">
-                Case studies and demos of agent systems applied to real-world
-                visual analysis workflows
-              </li>
-              <li className="mb-2">
-                Vision papers on agents in VIS education, immersive
-                visualizations for embodied agents, or multi-agent coordination
-                in visual reasoning
-              </li>
+
             </ul>
-          </div>
+          </div> */}
 
           {/* Submission & Review */}
           {/* <div className="mb-6">
