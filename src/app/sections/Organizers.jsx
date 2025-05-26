@@ -24,7 +24,7 @@ export default function Organizers() {
       <ul className="list-disc list-inside space-y-2 text-gray-800">
         {organizers.map((org) => (
           <li key={org.name} className="flex flex-col sm:flex-row sm:space-x-4">
-            <span className="font-semibold">{org.name}</span>
+            <span >{org.name}</span>
             <span className="text-gray-500">{org.affiliation}</span>
           </li>
         ))}
