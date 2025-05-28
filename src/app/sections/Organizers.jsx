@@ -18,7 +18,7 @@ export default function Organizers() {
   const developers = [
     { name: 'Pan Hao', affiliation: 'University of Minnesota' },
     { name: 'Divyanshu Tiwari', affiliation: 'University of Minnesota' },
-    { name: 'James Yang', affiliation: 'University of Minnesota' },
+    { name: 'Chia-Lun(James) Yang', affiliation: 'University of Minnesota' },
     { name: 'Zhu-Tian Chen', affiliation: 'University of Minnesota' },
     { name: 'Qianwen Wang', affiliation: 'University of Minnesota' }
   ]
