@@ -13,16 +13,30 @@ export default function Organizers() {
     { name: 'Renata G. Raidou', affiliation: 'TU Wien' },
     { name: 'Olivia Seow', affiliation: 'Harvard University' },
     { name: 'Catherine Yeh', affiliation: 'Harvard University' },
+  ];
+
+  const developers = [
+    { name: 'Zhu-Tian Chen', affiliation: 'University of Minnesota' },
     { name: 'Pan Hao', affiliation: 'University of Minnesota' },
     { name: 'Divyanshu Tiwari', affiliation: 'University of Minnesota' },
     { name: 'James Yang', affiliation: 'University of Minnesota' },
-  ];
+    { name: 'Qianwen Wang', affiliation: 'University of Minnesota' }
+  ]
 
   return (
     <section className="section" id="organizers">
       <h2 className="text-3xl font-semibold text-gray-900 mb-4">Organizers</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-800">
+      <ul className="list-disc list-inside space-y-1 text-gray-800">
         {organizers.map((org) => (
+          <li key={org.name} className="flex flex-col sm:flex-row sm:space-x-4">
+            <span >{org.name}</span>
+            <span className="text-gray-500">{org.affiliation}</span>
+          </li>
+        ))}
+      </ul>
+      <h2 className="text-xl font-semibold text-gray-900 mb-1 mt-4">Challenge and Web Development Team</h2>
+      <ul className="list-disc list-inside space-y-1 text-gray-800">
+        {developers.map((org) => (
           <li key={org.name} className="flex flex-col sm:flex-row sm:space-x-4">
             <span >{org.name}</span>
             <span className="text-gray-500">{org.affiliation}</span>
