@@ -198,6 +198,12 @@ export default function AIVisualizationWorkshop() {
       {/* <PC /> */}
       <Schedule />
       <Organizers />
+
+        <section className="section" id="sponsor">
+      <h2 className="text-3xl font-semibold text-gray-900 mb-4">Sponsor</h2>
+      TBA
+      </section>
+
       {/* <section>
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
           Program Overview
