@@ -6,12 +6,12 @@ export default function Organizers() {
     { name: 'Trevor DePodesta', affiliation: 'Harvard University' },
     { name: 'Niklas Elmqvist', affiliation: 'Aarhus University' },
     { name: 'Nam Wook Kim', affiliation: 'Boston College' },
-    { name: 'Qianwen Wang', affiliation: 'University of Minnesota' },
-    { name: 'Yun Wang', affiliation: 'Microsoft Research' },
-    { name: 'Emily Reif', affiliation: 'Google Research & University of Washington' },
     { name: 'Pranav Rajan', affiliation: 'KTH Royal Institute of Technology' },
     { name: 'Renata G. Raidou', affiliation: 'TU Wien' },
+    { name: 'Emily Reif', affiliation: 'Google Research & University of Washington' },
     { name: 'Olivia Seow', affiliation: 'Harvard University' },
+    { name: 'Qianwen Wang', affiliation: 'University of Minnesota' },
+    { name: 'Yun Wang', affiliation: 'Microsoft Research' },
     { name: 'Catherine Yeh', affiliation: 'Harvard University' },
   ];
 
@@ -34,7 +34,7 @@ export default function Organizers() {
           </li>
         ))}
       </ul>
-      <h2 className="text-xl font-semibold text-gray-900 mb-1 mt-4">Challenge and Web Development Team</h2>
+      <h2 className="text-xl font-semibold text-gray-900 mb-1 mt-4">Challenge Development Team</h2>
       <ul className="list-disc list-inside space-y-1 text-gray-800">
         {developers.map((org) => (
           <li key={org.name} className="flex flex-col sm:flex-row sm:space-x-4">
