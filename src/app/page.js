@@ -72,130 +72,9 @@ export default function AIVisualizationWorkshop() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-2 font-lato">
-      {/* <Home /> */}
-      {/* Header with logo */}
-      {/* <header className="flex justify-between items-center mb-6">
-        <h1 className="text-4xl text-gray-800">
-          1<sup>st</sup> Workshop on
-          <br />
-          GenAI, Agents and the future of VIS
-        </h1>
-        <div className="text-purple-500">
-          <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-            <path
-              d="M15 10L45 50"
-              stroke="#FF6B6B"
-              strokeWidth="6"
-              strokeLinecap="round"
-            />
-            <path
-              d="M45 10L15 50"
-              stroke="#6B66FF"
-              strokeWidth="6"
-              strokeLinecap="round"
-            />
-          </svg>
-        </div>
-      </header> */}
-
-      {/* Date and Location */}
-      {/* <div className="mb-6 text-gray-700">
-        <p className="text-xl">
-          November x, 2025 at IEEE VIS in Vienna, Austria
-        </p>
-      </div> */}
-
-      {/* Introduction */}
       <Intro />
-      {/* <section className="mb-8">
-        <p className="text-gray-700 mb-4">
-          The rapid evolution of generative AI and intelligent agents is
-          transforming how we interact with, understand, and visualize data. As
-          these technologies continue to advance, we stand at the frontier of
-          new visualization paradigms that will shape the future of the VIS
-          community.
-        </p>
-        <p className="text-gray-700 mb-4">
-          VISxGenAI brings together researchers, practitioners, and innovators
-          exploring the intersection of generative AI, autonomous agents, and
-          visualization. Our workshop aims to address critical questions: How
-          can visualization techniques evolve to collaborate with AI systems?
-          What novel interfaces will emerge in agent-augmented analytics? How
-          might generative AI reshape visualization authoring and consumption?
-        </p>
-      </section> */}
-
-      {/* Example Articles */}
-      {/* <section className="mb-8">
-        <p className="text-gray-700 mb-4">
-          Example interactive visualization articles that explain general
-          concepts and communicate experimental insights when playing with AI
-          models:
-        </p>
-        <ul className="space-y-2">
-          {exampleArticles.map((article) => (
-            <li key={article.id} className="text-gray-700">
-              ({article.id}){" "}
-              <a href={article.link} className="text-green-600 hover:underline">
-                {article.title}
-              </a>{" "}
-              by {article.authors}
-              {article.year && <span> ({article.year})</span>}
-            </li>
-          ))}
-        </ul>
-      </section> */}
-
-      {/* Important Dates */}
-
-      {/* <section className="mb-8" id="important-dates">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Important Dates
-        </h2>
-        <ul className="space-y-2">
-          <li className="text-gray-700">
-            July 30, 2025, anywhere: Submission Deadline
-          </li>
-          <li className="text-gray-700">
-            September 1, 2025: Author Notification
-          </li>
-          <li className="text-gray-700">
-            October 1, 2025: Camera Ready Deadline
-          </li>
-        </ul>
-      </section> */}
-
-      {/* <Vision /> */}
-
-
-      {/* <div>
-      <h1 className="text-3xl font-bold text-gray-800 mb-4">
-        Call for Participants
-      </h1>
-
-            <p className="mb-5">
-        We invite participation through two submission tracks:{" "}
-        <span className="font-medium">short paper</span> and{" "}
-        <span className="font-medium">mini-challenge</span>. Both are
-        opportunities to showcase novel ideas and engage with the growing
-        community at the intersection of visualization, generative AI, and
-        agentic systems.
-      </p>
-      <div className="flex">
-      <CFP />
-      <Challenge />
-      </div>
-
-            Submissions will
-            be reviewed by at least two reviewers. Accepted papers will be
-            invited to present as posters, demos, or lightning talks during the
-            workshop, and published on the workshop website. 
-      </div> */}
       <CallForParticipants />
       <Dates />
-
-      {/* Program Overview */}
-      {/* <PC /> */}
       <Schedule />
       <Organizers />
 
@@ -204,12 +83,6 @@ export default function AIVisualizationWorkshop() {
       TBA
       </section>
 
-      {/* <section>
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Program Overview
-        </h2>
-        <p className="text-gray-700">Coming soon!</p>
-      </section> */}
       <Contact />
     </div>
   );

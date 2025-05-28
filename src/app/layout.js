@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "VISxGenAI",
   description:
-    "Workshop on GenAI, Agents and the Future of VIS",
+    "Workshop on GenAI, Agents, and the Future of VIS",
   icons: {
     icon: "/fav.svg",
   },

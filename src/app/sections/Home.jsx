@@ -37,7 +37,7 @@ export default function Home() {
                     }}
                   />
                 </div>
-                GenAI, Agents and the Future of VIS
+                GenAI, Agents, and the Future of VIS
               </h1>
               {/* <div className="text-purple-300 ml-4">
               <svg width="60" height="60" viewBox="0 0 60 60" fill="none">

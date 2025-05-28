@@ -1,4 +1,4 @@
-Official website for the 1st Workshop on GenAI, Agents and the Future of VIS (VISxGenAI) 2025 to be held in Vienna, Austria.
+Official website for the 1st Workshop on GenAI, Agents, and the Future of VIS (VISxGenAI) 2025 to be held in Vienna, Austria.
 
 ## Getting Started
 
