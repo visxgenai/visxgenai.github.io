@@ -9,7 +9,7 @@ export default function CallForParticipants() {
 
          <p className="mb-2">
             We invite participation through two submission tracks:{" "}
-            <span className="font-semibold">Short Paper Submission</span> and{" "}
+            <span className="font-semibold">Short Paper</span> and{" "}
             <span className="font-semibold">Mini-Challenge</span>. Both are
             opportunities to showcase novel ideas and engage with the growing
             community at the intersection of visualization, generative AI, and
@@ -23,7 +23,7 @@ export default function CallForParticipants() {
                   <h2 className="text-2xl mb-4 font-bold 
                                  group-hover:text-slate-600 
                                  transition-colors duration-100">
-                     Track A: Paper Submission
+                     Track A: Short Paper
                   </h2>
                   <CFP />
                </div>
@@ -42,13 +42,11 @@ export default function CallForParticipants() {
             </div>
          </div>
 
-
-
          <p>
-            Submissions must be anonymous and submitted through the PCS system. Each submission will be evaluated by at least two reviewers, based on quality and topical relevance.
-            Accepted papers will be
-            invited to present as posters, demos, or lightning talks during the
-            workshop, and published on the workshop website.
+            Submissions—including both papers and challenge reports—must be anonymous and submitted through the PCS system. 
+            Each submission will be evaluated by at least two reviewers based on quality and topical relevance. 
+            Accepted papers will be invited to present as posters, demos, or lightning talks during the workshop, and will be published on the workshop website. 
+            Top-rated challenge participants will receive awards and be invited to present their solutions at the workshop.
          </p>
       </section>
    );
