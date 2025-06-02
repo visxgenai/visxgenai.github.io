@@ -16,20 +16,21 @@ export default function CFP() {
 
   // Example papers data
   const examplePapers = {
-    genaiInterpretability1: [
-      "Smith et al. (2024). VisLLM: A Framework for Visualizing Language Model Decision Processes.",
-      "Jones & Wong (2023). Diffusion Lens: Interactive Visualizations for Understanding Image Generation.",
-      "Martinez et al. (2024). Attention Flow: Visual Analysis of Transformer Attention Patterns.",
+    genaiInterpretability1: ["Papers presenting novel visualization techniques or systems for interpretability \
+      of frontier generative models, accompanied by interactive demos that showcase practical applications for GenAI researchers. Some example papers include: ",
+      "* Lee et. al. (2024). LLM Attributor: Interactive Visual Attribution for LLM Generation",
+      "* Lin (2023). Neuronpedia: Interactive Reference and Tooling for Analyzing Neural Networks.",
     ],
     genaiInterpretability2: [
-      "Chen et al. (2024). Beyond Attention: New Interpretability Methods for Modern Language Models.",
-      "Garcia & Kim (2023). Graph-based Visualization of LLM Knowledge Extraction.",
-      "Williams et al. (2024). Visual Analytics for Multimodal Model Understanding.",
+      "Papers highlighting challenges and opportunities where visualization \
+      expertise could contribute, presented as posters to facilitate in-depth discussions with visualization researchers. For example:",
+      "* Viégas, and Wattenberg. (2023). The System Model and the User Model: Exploring AI Dashboard Design",
+
     ],
     genaiInterpretability3: [
-      "Lee & Patel (2023). The Visualization Gap: Challenges for Next-Gen AI Interpretability.",
-      "Thompson et al. (2024). VISAI: A Research Agenda for Visual Analytics in Generative AI.",
-      "Rodriguez et al. (2024). Benchmarking Visualization Literacy for AI Interpretability Tools.",
+      "Brief position papers outlining research agendas, proposing benchmarks, tooling infrastructure, \
+      or suggesting collaborative projects between visualization and interpretability experts to enhance \
+      our understanding of the frontier models.",
     ],
   };
 
@@ -40,7 +41,7 @@ export default function CFP() {
         {/* <h2 className="text-2xl mb-4 font-bold">TrackA: Paper Submission</h2> */}
         <p className="mb-4">
           We invite short paper submissions (2–4 pages excluding references) that explore
-          topics across theory, systems, user studies, and applications on GenAI interpretability or agentic VIS.
+          topics across theory, systems, user studies, and applications for GenAI interpretability and safety, or agentic VIS.
           Submissions must follow the VGTC conference two-column format, consistent with the <a className="text-[#7a0019] hover:underline" href="https://tc.computer.org/vgtc/publications/conference/" target="_blank">IEEE VIS formatting guidelines</a>.
           Areas of interest include, but are not limited to, the following:
         </p>
@@ -50,7 +51,7 @@ export default function CFP() {
 
           <ul className="list-disc pl-5 mb-4">
             <li className="mb-2">
-              <em>VIS for interpreting GenAI</em>, such as LLMs or diffusion models.
+              <em>VIS for interpreting GenAI systems</em>.
               <br />
               <span
                 onClick={() => toggleDropdown("genaiInterpretability1")}
@@ -59,7 +60,7 @@ export default function CFP() {
                 <span>
                   {openDropdowns.genaiInterpretability1 ? "▼" : "▶"}
                 </span>
-                <span className="ml-1">Example papers</span>
+                <span className="ml-1">More information</span>
               </span>
               <div className="mt-2">
 
@@ -77,7 +78,7 @@ export default function CFP() {
               </div>
             </li>
             <li className="mb-2">
-              <em>Call for VIS from GenAI community</em> that
+              <em>GenAI interpretability and safety realted works </em> that
               highlights challenges or opportunities where VIS can fit. <br />
               <span
                 onClick={() => toggleDropdown("genaiInterpretability2")}
@@ -86,7 +87,7 @@ export default function CFP() {
                 <span>
                   {openDropdowns.genaiInterpretability2 ? "▼" : "▶"}
                 </span>
-                <span className="ml-1">Example papers</span>
+                <span className="ml-1">More information</span>
               </span>
               <div className="mt-2">
 
@@ -104,7 +105,7 @@ export default function CFP() {
               </div>
             </li>
             <li className="mb-2">
-              <em>Position papers for VIS and interpretability researchers.</em>  <br />
+              <em>Position papers for VIS and GenAI researchers.</em>  <br />
               <span
                 onClick={() => toggleDropdown("genaiInterpretability3")}
                 className="text-sm text-[#407498] hover:text-[#24597E] items-center"
@@ -112,7 +113,7 @@ export default function CFP() {
                 <span>
                   {openDropdowns.genaiInterpretability3 ? "▼" : "▶"}
                 </span>
-                <span className="ml-1">Example papers</span>
+                <span className="ml-1">More information</span>
               </span>
               <div className="mt-2">
 

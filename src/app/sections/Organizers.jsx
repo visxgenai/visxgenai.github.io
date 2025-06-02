@@ -3,7 +3,6 @@ export default function Organizers() {
     { name: 'Zhu-Tian Chen', affiliation: 'University of Minnesota' },
     { name: 'Shivam Raval', affiliation: 'Harvard University' },
     { name: 'Enrico Bertini', affiliation: 'Northeastern University' },
-    { name: 'Trevor DePodesta', affiliation: 'Harvard University' },
     { name: 'Niklas Elmqvist', affiliation: 'Aarhus University' },
     { name: 'Nam Wook Kim', affiliation: 'Boston College' },
     { name: 'Pranav Rajan', affiliation: 'KTH Royal Institute of Technology' },

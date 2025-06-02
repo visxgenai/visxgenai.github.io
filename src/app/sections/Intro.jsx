@@ -12,7 +12,7 @@ export default function Intro() {
           Generative AI (GenAI) is transforming the landscape of artificial intelligence, 
           not just in scale but in kind. Unlike traditional AI, GenAI introduces unique challenges 
           around interpretability, as its tens of billions of parameters and emergent behaviors demand new ways to understand, 
-           debug, and visualize model internals. At the same time, GenAI enables agentic systems—goal-driven, 
+           debug, and visualize model internals and their responses. At the same time, GenAI enables agentic systems—goal-driven, 
            autonomous agents that can reason, act, and adapt across complex tasks, raising a critical question: 
            Will AI agents eventually replace human data scientists, and if not, how might they best collaborate?
         </p>
@@ -21,7 +21,7 @@ export default function Intro() {
           exploring the intersection of generative AI, autonomous agents, and
           visualization. 
           We focus on new challenges and opportunities, 
-          including <b>interpreting and visualizing large-scale foundation models</b>,  
+          including <b>interpreting and visualizing various aspects of large-scale foundation models</b>,  
           <b> designing visual tools both for and with agents</b>, and <b>rethinking evaluation, education, and 
           human–AI collaboration in the age of generative intelligence</b>. 
           Our workshop aims to address critical questions: How
