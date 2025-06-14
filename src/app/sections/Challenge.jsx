@@ -16,8 +16,7 @@ export default function Challenge() {
       </p>
       
       <p className="mb-4">
-        More details, including datasets, templates, and submission instructions, will be released
-        by <b>Jun 10th</b>.
+        More details, including datasets, templates, and submission instructions, will be released in June!
       </p>
       <p className="font-semibold italic">Stay tuned!</p>
       <img src="/challenge-bg.png" alt="Challenge" className="w-full h-70 object-contain" />
