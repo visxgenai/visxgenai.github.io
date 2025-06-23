@@ -20,7 +20,7 @@ export default function Challenge() {
       
       <p className="mb-4">
         Winning teams will receive $ thousands in cloud credits (sponsor to be announced), award certificates, and an invitation to present at the workshop.
-        More details, including datasets, templates, and submission instructions, can be found: <a href="https://www.visagent.org">visagent.org</a>
+        More details, including datasets, templates, and submission instructions, can be found: <a className="font-semibold italic" style="color:steelblue;" href="https://www.visagent.org">visagent.org</a>
       </p>
 
       <img src="/challenge-bg.png" alt="Challenge" className="w-full h-70 object-contain" />
