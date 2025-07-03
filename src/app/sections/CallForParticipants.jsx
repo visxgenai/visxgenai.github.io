@@ -47,6 +47,14 @@ export default function CallForParticipants() {
             Each submission will be evaluated by at least two reviewers based on quality and topical relevance. 
             Accepted papers will be invited to present as posters, demos, or lightning talks during the workshop, and will be published on the workshop website. 
             Top-rated challenge participants will receive awards and be invited to present their solutions at the workshop.
+            Please join the{" "}
+              <a
+                href="https://discord.gg/MqVn2df5Us"
+                className= "bg-purple-100 py-1 px-2 rounded-sm hover:bg-purple-200 text-sm text-purple-500 hover:text-purple-700"
+              >
+               Discord
+              </a>{" "}
+              for any questions and discussions.
          </p>
       </section>
    );
