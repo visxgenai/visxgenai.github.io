@@ -78,9 +78,14 @@ export default function AIVisualizationWorkshop() {
       <Schedule />
       <Organizers />
 
-        <section className="section" id="sponsor">
-      <h2 className="text-3xl font-semibold text-gray-900 mb-4">Sponsor</h2>
-      TBA
+      <section className="section" id="sponsor">
+        <h2 className="text-3xl font-semibold text-gray-900 mb-4">Sponsor</h2>
+          Our workshop is sponsored by Amazon.
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+            alt="AWS"
+            className="w-1/5 h-1/5 object-cover mt-8"
+          />
       </section>
 
       <Contact />

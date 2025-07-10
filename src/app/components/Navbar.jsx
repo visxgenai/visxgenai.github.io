@@ -32,6 +32,7 @@ export default function ResponsiveNavbar() {
     // { name: 'Program Committee', href: '#pc' },
     { name: "Schedule", href: "#schedule" },
     { name: "Organizers", href: "#organizers" },
+    { name: "Sponsor", href: "#sponsor" },
     { name: "Contact", href: "#contact" },
   ];
 
