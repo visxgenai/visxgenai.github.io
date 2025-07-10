@@ -19,7 +19,7 @@ export default function Challenge() {
       </p>
       
       <p className="mb-4">
-        Winning teams will receive $ thousands in cloud credits (sponsor to be announced), award certificates, and an invitation to present at the workshop.
+        Winning teams will receive $ thousands in cloud credits (sponsored by Amazon), award certificates, and an invitation to present at the workshop.
         More details, including datasets, templates, and submission instructions, can be found: <a className="font-semibold italic" style={{color: 'steelblue'}} href="https://www.visagent.org" target="_blank">visagent.org</a>
       </p>
 
