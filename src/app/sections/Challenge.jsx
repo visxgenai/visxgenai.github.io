@@ -54,7 +54,7 @@ export default function Challenge() {
   {/* 1 st Place */}
   <div className="flex flex-col items-center p-3 rounded-md border border-gray-300">
     
-    <h3 className="mt-1 text-sm font-semibold"><span className="text-xl" role="img" aria-label="gold medal">🥇</span> 1&nbsp;st&nbsp;Place <br /> &nbsp;</h3>
+    <h3 className="mt-1 text-sm font-semibold"><span className="text-xl" role="img" aria-label="gold medal">🥇</span> 1&nbsp;st&nbsp;Place <br /> <span className="text-[10px] font-normal">(x1 team)</span></h3>
     <p className="text-lg font-medium mt-1">$3,000</p>
     <p className="text-xs">in AWS cloud credits</p>
   </div>
@@ -63,7 +63,7 @@ export default function Challenge() {
   {/* <div className="flex flex-col items-center p-3 rounded-md border border-gray-300"> */}
   <div className="flex-shrink-0 basis-56 flex flex-col items-center p-3 rounded-md border border-gray-300">
     
-    <h3 className="mt-1 text-sm font-semibold"><span className="text-xl" role="img" aria-label="silver medal">🥈</span> Runner-up <br /> &nbsp; </h3>
+    <h3 className="mt-1 text-sm font-semibold"><span className="text-xl" role="img" aria-label="silver medal">🥈</span> Runner-up <br /> <span className="text-[10px] font-normal">(x1 team)</span> </h3>
     <p className="text-lg font-medium mt-1">$1,500</p>
     <p className="text-xs">in AWS cloud credits</p>
   </div>
@@ -72,7 +72,7 @@ export default function Challenge() {
   {/* Honorable Mentions */}
   <div className="flex flex-col items-center p-3 rounded-md border border-gray-300">
     <h3 className="mt-1 text-sm font-semibold text-center">
-      <span className="text-xl" role="img" aria-label="bronze medal">🏅</span> Honorable Mention <span className="text-[10px] font-normal">(3 teams)</span>
+      <span className="text-xl" role="img" aria-label="bronze medal">🏅</span> Honorable Mention <span className="text-[10px] font-normal">(x3 teams)</span>
     </h3>
     <p className="text-lg font-medium mt-1">$500&nbsp;<span className="text-[12px] font-normal">each</span></p>
     <p className="text-xs">in AWS cloud credits</p>

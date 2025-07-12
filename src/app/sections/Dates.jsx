@@ -24,8 +24,8 @@ export default function Dates() {
           Deadline
         </li>
         <li className="text-gray-700">
-          <span className="font-medium">November 2nd or 3rd:</span> Workshop
-          Day, TBD
+          <span className="font-medium">November 3rd (Monday), 2025:</span> Workshop
+          Day
         </li>
       </ul>
     </section>
