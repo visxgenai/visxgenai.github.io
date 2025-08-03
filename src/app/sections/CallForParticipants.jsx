@@ -31,7 +31,7 @@ export default function CallForParticipants() {
             <div className="w-full md:w-1/2">
                <div className="group bg-white rounded-2xl shadow-lg p-6 
                               hover:shadow-xl hover:bg-slate-50 
-                              transition duration-100">
+                              transition duration-100" style={{paddingBottom: '0px'}}>
                   <h2 className="text-2xl mb-4 font-bold 
                                  group-hover:text-slate-600 
                                  transition-colors duration-100">

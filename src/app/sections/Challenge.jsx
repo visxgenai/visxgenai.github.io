@@ -1,7 +1,7 @@
 export default function Challenge() {
 
   return (
-    <section className="section" id="challenge">
+    <section id="challenge">
 
       {/* <h2 className="text-2xl mb-4 font-bold">TrackB: Mini-Challenge</h2> */}
       <p className="mb-4">
@@ -80,11 +80,12 @@ export default function Challenge() {
 </div>
 {/* ---- /Prize info ---- */}
 
-      <p className="mb-4">
+      <p >
         More details, including datasets, templates, and submission instructions, can be found: <a className="font-semibold italic" style={{color: 'steelblue'}} href="https://www.visagent.org" target="_blank">visagent.org</a>
+
+      <img src="/challenge-bg.png" alt="Challenge" className="w-full object-contain" style={{paddingTop: '20px'}} />
       </p>
 
-      <img src="/challenge-bg.png" alt="Challenge" className="w-full h-70 object-contain" />
     </section>
   );
 }

@@ -9,6 +9,7 @@ import Home from "./sections/Home";
 import Challenge from "./sections/Challenge";
 import CallForParticipants from "./sections/CallForParticipants";
 import Contact from "./sections/Contact";
+import Speakers from "./sections/Speakers";
 export default function AIVisualizationWorkshop() {
   // Example visualization articles with their corresponding letters
   const exampleArticles = [
@@ -75,6 +76,7 @@ export default function AIVisualizationWorkshop() {
       <Intro />
       <CallForParticipants />
       <Dates />
+      <Speakers />
       <Schedule />
       <Organizers />
 
