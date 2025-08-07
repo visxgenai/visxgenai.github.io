@@ -14,7 +14,7 @@ export default function Challenge() {
       <p className="mb-4">
         The goal is to benchmark and accelerate progress in agent-based data analysis and communication. We will provide a starter kit and an evaluation server to support participants. 
         During the testing period, you will be able to iteratively improve your agents by submitting them to the evaluation server. 
-        By the submission deadline, you will submit a technical report (up to 2 pages via the PCS system) that 
+        By the submission deadline, you will submit a technical report (<a href="https://tc.computer.org/vgtc/publications/conference/" target="_blank" className="hover:underline" style={{color: 'steelblue'}}>VGTC short paper format</a>, up to 2 pages via the PCS system) that 
         1) describes how your best-performing agent was developed and 2) includes a link to its best generated report.
       </p>
       

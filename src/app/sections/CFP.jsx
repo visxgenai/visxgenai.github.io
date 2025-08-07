@@ -42,7 +42,7 @@ export default function CFP() {
         <p className="mb-4">
           We invite short paper submissions (2–4 pages excluding references) that explore
           topics across theory, systems, user studies, and applications for GenAI interpretability and safety, or agentic VIS.
-          Submissions must follow the VGTC conference two-column format, consistent with the <a className="text-[#7a0019] hover:underline" href="https://tc.computer.org/vgtc/publications/conference/" target="_blank">IEEE VIS formatting guidelines</a>.
+          Submissions must follow the VGTC conference two-column format, consistent with the <a className="hover:underline" style={{color: 'steelblue'}} href="https://tc.computer.org/vgtc/publications/conference/" target="_blank">IEEE VIS formatting guidelines</a>.
           Areas of interest include, but are not limited to, the following:
         </p>
 
