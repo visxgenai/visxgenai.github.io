@@ -1,31 +1,30 @@
 import React from 'react';
 
 const speakers = [
-    {
-        name: 'Prof. Andreas Holzinger',
-        image: '/Holzinger.png',
-        href: 'https://www.aholzinger.at/',
-        bio: `Prof. Holzinger is **Endowed Chair for Digital Transformation in Smart Farm & Forest Operations at BOKU University Vienna** and **Head of the Human-Centered AI Lab**. He pioneered interactive machine learning with the human-in-the-loop, advancing robustness and explainability in AI systems. For these contributions he became **member of Academia Europaea** (2019), **ELLIS fellow** (2020), and **IFIP Fellow** (2021). 
-        
-        Holzinger previously served as Visiting Professor for explainable AI at the University of Alberta's xAI Lab and held posts at Verona, RWTH Aachen, and UCL. He consults the Canadian, U.S., U.K., Swiss, French, Italian, and Dutch governments and advises the EU and Germany's "AI made in Germany 2030" strategy. 
-        He co-leads EU flagship projects on trustworthy, sustainable AI,
-        and his current research pushes multi-objective counterfactual explanations to accelerate Forestry 5.0, climate resilience, and health applications.
-        
-        Outside the lab, Holzinger is an avid soccer enthusiast, enjoys ballroom dancing, and keeps fit practicing Shotokan karate (7 th Kyu).
-        `
-    },
+    
     {
         name: 'Mr. Taimur Rashid',
         image: '/Rashid.png',
         href: 'https://www.linkedin.com/in/taimurrashid/',
-        bio: `Taimur is an accomplished product and business executive with 20+ years at the intersection of technology, product, and go-to-market strategy. He currently is **the head of  AWS's Generative AI Innovation & Delivery organization**, helping global enterprises build end-to-end GenAI solutions.
+        bio: `Taimur is an accomplished product and business executive with 20+ years at the intersection of technology, product, and go-to-market strategy. He currently serves as Managing Director of AWS's Generative AI Innovation & Delivery organization, a multi disciplinary team of AI scientists, strategists, and engineers that help organizations worldwide build and adopt end-to-end generative AI and agentic AI solutions. 
 
-        Previously, he was **Executive Vice President of AI at Redis**, where he built the company's AI/ML business and advanced IPO-readiness. He also became **Founding Partner of Recursion Venture Capital**, extending a decade of angel investing into a formal micro-VC.
-        Earlier, as GM & Head of Worldwide Customer Success for Microsoft Azure Data & AI, he led global teams that migrated and modernized Fortune-500.
-        During his first tenure at AWS he led product-marketing and GTM specialist units, helping push AWS past a $25 billion run rate and winning customers like Adobe and Netflix.
+Prior to re-joining AWS, Taimur served as Executive Vice President of AI at Redis, where he built the AI/ML business from the ground up, leading product strategy, product development, and market introduction, while also contributing to Redis IPO readiness through strategic projects. He also founded Recursion Venture Capital, a boutique venture capital and management consulting firm, wherein he formalized 5+ of angel investing into being a micro-VC, and over a decade worth of GTM experience into a management consulting practice. At Microsoft, as GM and Head of Customer Success and Customer Engineering for Azure Data and AI, he built a top-tier organization focused on helping enterprise organizations with cloud migration, data modernization, and digital transformation for Azure Data & AI.
 
-        Taimur is a University of Texas at Austin alumnus with a focus on automata theory and knowledge-based systems. He lives in Bellevue, WA, stays active, paints, coaches youth basketball, and supports local nonprofits.`,
+Taimur is a University of Texas at Austin alumnus with a focus on automata theory and knowledge-based systems. He lives in Bellevue, WA, stays active, paints, coaches youth basketball, and supports local nonprofits.
+`,
     },
+    {
+        name: 'Prof. Andreas Holzinger',
+        image: '/Holzinger.png',
+        href: 'https://www.aholzinger.at/',
+        bio: `Andreas Holzinger pioneered in interactive machine learning with the human-in-the-loop promoting robustness and explainability to foster trustworthy AI. He advocates a synergistic approach of Human-Centered AI (HCAI) to put the human in-control of AI, aligning artificial intelligence with human intelligence, social values, ethical principles, and legal requirements to ensure secure, safe and controllable AI.
+                
+        Andreas was elected a member of Academia Europaea in 2019, the European Academy of Science, of the European Laboratory for Learning and Intelligent Systems (ELLIS) in 2020, and Fellow of the international federation of information processing (ifip) in 2021.  
+        He obtained his Ph.D. from Graz University in 1998, and his Habilitation from Graz University of Technology in 2003. 
+        Andreas was Visiting Professor in Verona (Italy), RWTH Aachen (Germany), the UCL (UK), and the University of Alberta (Canada). Since 2021 he is endowed chair for digital transformation in smart farm and forest operations at the Department of Ecosystem Management, Climate and Biodiversity at BOKU University Vienna, and is head of the HCAI Lab Vienna. Andreas serves as consultant for the Canadian, US, UK, Swiss, French, Italian and Dutch governments, the German Excellence Initiative, and as national expert in the European Commission. He is also on the advisory board of the German  Government's AI strategy, AI made in Germany 2030.
+        
+        Outside the lab, Andreas keeps fit by practicing Shotokan Karate (1st Dan).`
+    }
 ];
 
 export default function Speakers() {
