@@ -3,7 +3,7 @@ import React from 'react';
 const speakers = [
     
     {
-        name: 'Mr. Taimur Rashid',
+        name: 'Taimur Rashid',
         image: '/Rashid.png',
         href: 'https://www.linkedin.com/in/taimurrashid/',
         bio: `Taimur is an accomplished product and business executive with 20+ years at the intersection of technology, product, and go-to-market strategy. He currently serves as Managing Director of AWS's Generative AI Innovation & Delivery organization, a multi disciplinary team of AI scientists, strategists, and engineers that help organizations worldwide build and adopt end-to-end generative AI and agentic AI solutions. 
@@ -14,7 +14,7 @@ Taimur is a University of Texas at Austin alumnus with a focus on automata theor
 `,
     },
     {
-        name: 'Prof. Andreas Holzinger',
+        name: 'Andreas Holzinger',
         image: '/Holzinger.png',
         href: 'https://www.aholzinger.at/',
         bio: `Andreas Holzinger pioneered in interactive machine learning with the human-in-the-loop promoting robustness and explainability to foster trustworthy AI. He advocates a synergistic approach of Human-Centered AI (HCAI) to put the human in-control of AI, aligning artificial intelligence with human intelligence, social values, ethical principles, and legal requirements to ensure secure, safe and controllable AI.
