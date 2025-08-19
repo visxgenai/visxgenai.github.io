@@ -12,11 +12,11 @@ export default function Dates() {
           Participation
         </li>
         <li className="text-gray-700">
-          <span className="font-medium">August 20th, 2025:</span>{" "}
+          <span className="font-medium">August <s>20th</s> <span style={{ color: 'red'}}>29th (Friday)</span>, 2025:</span>{" "}
           Submission Deadline
         </li>
         <li className="text-gray-700">
-          <span className="font-medium">September 1st, 2025:</span> Author
+          <span className="font-medium">September <s>1st</s> <span style={{ color: 'red'}}>10th</span>, 2025:</span> Author
           Notification
         </li>
         <li className="text-gray-700">
