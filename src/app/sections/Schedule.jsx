@@ -17,9 +17,9 @@ function Presentation(props) {
     <div className="mb-2">
       {type === "challenge-winner" ? "🥇": 
       type === "challenge-runnerup" ? "🥈": 
-      type === "challenge-honorable" ? "🏅": 
-      type === "short-paper" ? "📄": 
-      type === "challenge" ? "": 
+      type === "challenge-honorable" ? "🎖": 
+      type === "short-paper" ? "📝": 
+      type === "challenge" ? "🏆": 
       ""}
         {/* <a 
           href={link} 

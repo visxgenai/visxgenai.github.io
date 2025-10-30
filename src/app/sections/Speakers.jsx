@@ -29,50 +29,52 @@ Taimur is a University of Texas at Austin alumnus with a focus on automata theor
 
 export default function Speakers() {
     return (
-        <section id="speakers" className="section">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Keynote Speakers</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {speakers.map((speaker) => (
-                    <div key={speaker.name} className="flex flex-col items-center">
-                        <figure className="flex flex-col items-center justify-start text-center mx-auto">
-                            <img
-                                src={speaker.image}
-                                alt={speaker.name}
-                                className="w-64 h-64 object-cover rounded-lg mb-4"
-                                style={{ aspectRatio: '1/1' }}
-                            />
-                            <figcaption className="w-full">
-                                <h3 className="text-lg font-semibold text-center">
-                                    {speaker.href ? (
-                                        <a
-                                            href={speaker.href}
-                                            className="hover:underline"
-                                            style={{ color: '#407498', textDecoration: 'underline' }}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            {speaker.name}
-                                        </a>
-                                    ) : (
-                                        speaker.name
-                                    )}
-                                </h3>
-                            </figcaption>
-                        </figure>
-                        <div className="w-128 mt-2">
-                            {speaker.bio
-                                .split(/\n\s*\n/)
-                                .map((para, pIdx) => (
-                                    <p key={pIdx} className="text-sm text-gray-600 text-justify mb-2">
-                                        {para.split('**').map((part, idx) =>
-                                            idx % 2 === 1 ? <strong key={idx}>{part}</strong> : part
-                                        )}
-                                    </p>
-                                ))}
-                        </div>
-                    </div>
-                ))}
+      <section id="speakers" className="section">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Keynote Speakers</h2>
+  
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {speakers.map((speaker) => (
+            <div key={speaker.name} className="flex min-w-0 flex-col items-center">
+              <figure className="flex w-full max-w-[28rem] flex-col items-center justify-start text-center mx-auto">
+                <img
+                  src={speaker.image}
+                  alt={speaker.name}
+                  className="w-full max-w-xs aspect-square object-cover rounded-lg mb-4"
+                />
+                <figcaption className="w-full">
+                  <h3 className="text-lg font-semibold text-center">
+                    {speaker.href ? (
+                      <a
+                        href={speaker.href}
+                        className="hover:underline"
+                        style={{ color: '#407498', textDecoration: 'underline' }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {speaker.name}
+                      </a>
+                    ) : (
+                      speaker.name
+                    )}
+                  </h3>
+                </figcaption>
+              </figure>
+  
+              <div className="w-full max-w-[32rem] mt-2 min-w-0">
+                {speaker.bio
+                  .split(/\n\s*\n/)
+                  .map((para, pIdx) => (
+                    <p key={pIdx} className="text-sm text-gray-600 text-justify mb-2">
+                      {para.split('**').map((part, idx) =>
+                        idx % 2 === 1 ? <strong key={idx}>{part}</strong> : part
+                      )}
+                    </p>
+                  ))}
+              </div>
             </div>
-        </section>
+          ))}
+        </div>
+      </section>
     );
-}
+  }
+  
