@@ -81,7 +81,11 @@ export default function Challenge() {
 {/* ---- /Prize info ---- */}
 
       <p >
-        More details, including datasets, templates, and submission instructions, can be found: <a className="font-semibold italic" style={{color: 'steelblue'}} href="https://www.visagent.org" target="_blank">visagent.org</a>
+        More details, including datasets, templates, and submission instructions, can be found: <a className="font-semibold italic" style={{color: 'steelblue'}} 
+        // href="https://www.visagent.org" 
+        href="https://amplify.dvsuyr25l38y1.amplifyapp.com"
+        target="_blank">visagent.org
+        </a>
 
       <img src="/challenge-bg.png" alt="Challenge" className="w-full object-contain" style={{paddingTop: '20px'}} />
       </p>
