@@ -150,7 +150,7 @@ export default function FullSchedule() {
     { time: "10:30am - 11:00am", event: "Morning Coffee Break", highlight: true },
     { 
       time: "11:00am - 12:00pm", 
-      event: "Short Paper / Challenge Honorable Mentions",
+      event: "Short Paper / Challenge",
       details: "each 5 mins talk + 2mins Q&A",
       presentations: presentations.morning
     },
@@ -158,7 +158,7 @@ export default function FullSchedule() {
     { time: "12:30am - 2:00pm", event: "Lunch Break", highlight: true },
     { 
       time: "2:00am - 3:00pm", 
-      event: "Short Paper / Challenge Honorable Mentions",
+      event: "Short Paper / Challenge",
       details: "each 5 mins talk + 2mins Q&A",
       presentations: presentations.afternoon
     },
