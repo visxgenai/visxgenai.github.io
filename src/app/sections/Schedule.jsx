@@ -1,186 +1,197 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Papa from "papaparse";
 
-export function Schedule() {
-    return (
-      <section id="schedule" className="section">
-      <h2 className="text-3xl font-bold text-gray-800 mb-4">Schedule</h2>
-      <p className="text-gray-700 mb-4 italic font-semibold">Details TBA soon! </p>
-      <div className="overflow-x-auto mb-10 rounded-lg">
-        <table
-        className="border border-gray-300 table-fixed"
-        style={{ maxWidth: "700px", width: "100%" }}
-        >
+function Presentation(props) {
+  const { 
+    presenter,
+    type,
+    presentMode,
+    title,
+    link,
+    authers
+  } = props;
+  const displayedAuthers = authers ? authers : presenter;
+  return (
+    <div className="mb-2">
+      {type === "challenge-winner" ? "🥇": 
+      type === "challenge-runnerup" ? "🥈": 
+      type === "challenge-honorable" ? "🏅": 
+      type === "short-paper" ? "📄": 
+      type === "challenge" ? "": 
+      ""}
+        {/* <a 
+          href={link} 
+          className="text-blue-500 hover:text-blue-600"
+          target="_blank"
+          rel="noopener noreferrer"
+        > */}
+          {" "}
+          <span className="text-blue-400">
+           {title}
+           </span>
+          {" "}
+        {/* </a> */}
+      <br />
+        <span className="text-gray-600">by {displayedAuthers}</span>
+    </div>
+  );
+}
+
+function ScheduleRow({ time, event, details, presentations: rowPresentations, highlight, isHeader }) {
+  const rowClass = highlight ? "bg-gray-100" : isHeader ? "bg-gray-300" : "";
+  
+  return (
+    <tr className={rowClass}>
+      <td className={`px-4 py-2 align-top ${isHeader ? "font-bold" : ""}`}>
+        {time}
+      </td>
+      <td className={`px-4 py-2 ${isHeader ? "font-bold" : ""}`}>
+        {event}
+        {details && ` (${details})`}
+        {rowPresentations && rowPresentations.length > 0 && (
+          <div>
+            <div className="mt-3">
+              {rowPresentations.map((pres, idx) => (
+                <Presentation key={idx} {...pres} />
+              ))}
+            </div>
+          </div>
+        )}
+      </td>
+    </tr>
+  );
+}
+
+function ScheduleTable({ children }) {
+  return (
+    <div className="overflow-x-auto rounded-lg">
+      <table className="border border-gray-300 table-fixed">
         <colgroup>
-          <col style={{ width: "220px", maxWidth: "220px" }} />
-          <col style={{ maxWidth: "400px" }} />
+          <col style={{ width: "180px", maxWidth: "180px" }} />
+          <col style={{ width: "900px", maxWidth: "900px" }} />
         </colgroup>
         <tbody className="divide-y divide-gray-200">
-          <tr className="bg-gray-100">
-          <td className="px-4 py-2 align-top font-bold truncate">
-            Vienna Time (UTC+2)
-            <br />
-            {/* <span className="text-sm text-gray-600">(10 min)</span> */}
-          </td>
-          <td className="px-4 py-2 font-bold">Events</td>
-          </tr>
-          <tr>
-          <td className="px-4 py-2 align-top">
-            9:00 am - 12:30pm
-            <br />
-            {/* <span className="text-sm text-gray-600">(10 min)</span> */}
-          </td>
-          <td className="px-4 py-2">
-            Morning Session
-          </td>
-          </tr>
-          <tr>
-          <td className="px-4 py-2 align-top">
-            12:30 pm – 2:00 pm
-            <br />
-            {/* <span className="text-sm text-gray-600">(50 min)</span> */}
-          </td>
-          <td className="px-4 py-2">
-            Lunch Break
-          </td>
-          </tr>
-          <tr>
-          <td className="px-4 py-2 align-top">
-            2:00 pm - 5:30 pm
-            <br />
-            {/* <span className="text-sm text-gray-600">(30 min)</span> */}
-          </td>
-          <td className="px-4 py-2">
-            Afternoon Session
-          </td>
-          </tr>
+          {children}
         </tbody>
-        </table>
-      </div>
-      </section>
-    )
+      </table>
+    </div>
+  );
 }
 
 export default function FullSchedule() {
+  const [loading, setLoading] = useState(true);
+  const [presentations, setPresentations] = useState({
+    awards: [],
+    morning: [],
+    afternoon: []
+  });
+
+  useEffect(() => {
+    // Load presenters from CSV
+    Papa.parse("/visxgenai-2025-presentation.csv", {
+      download: true,
+      header: true,
+      skipEmptyLines: true,
+      dynamicTyping: false,
+      complete: (results) => {
+        // Group presentations by present-session
+        const grouped = {
+          awards: [],
+          morning: [],
+          afternoon: []
+        };
+        
+        results.data.forEach(row => {
+          const session = (row['present-session'] || '').trim().toLowerCase();
+          
+          const presentation = {
+            title: row.title,
+            authers: row.authers || "",
+            link: row.link || "#",
+            type: row.type,
+            presentMode: row['present-mode'] || "",
+            presenter: row.presenter || "",
+          };
+          if (session === 'award') {
+            grouped.awards.push(presentation);
+          } else if (session === 'morning') {
+            grouped.morning.push(presentation);
+          } else if (session === 'afternoon') {
+            grouped.afternoon.push(presentation);
+          }
+        });
+        
+        setPresentations(grouped);
+        setLoading(false);
+      },
+      error: (error) => {
+        console.error("Error loading presenters:", error);
+        setLoading(false);
+      }
+    });
+  }, []);
+
+  const scheduleData = [
+    { time: "8:30 – 9:00 am", event: "Arrival & Breakfast / Registration" },
+    { time: "9:00 – 9:05 am", event: "Welcome & Opening Remarks" },
+    { 
+      time: "9:05 – 10:05 am", 
+      event: "Keynote by the invited speaker",
+      details: "45 mins + 15 mins Q&A"
+    },
+    { 
+      time: "10:05 – 10:30 am", 
+      event: "Challenge Awards. Winner and Runner up presentation",
+      details: "each 7 mins talk + 3 mins Q&A",
+      presentations: presentations.awards
+    },
+    { time: "10:30 – 11:00 am", event: "Morning Coffee Break", highlight: true },
+    { 
+      time: "11:00 - 12:00 pm", 
+      event: "Short Paper / Challenge Honorable Mentions",
+      details: "each 5 mins talk + 2mins Q&A",
+      presentations: presentations.morning
+    },
+    { time: "12:00 – 12:30 pm", event: "Poster Session and Networking" },
+    { time: "12:30 – 2:00 pm", event: "Lunch Break", highlight: true },
+    { 
+      time: "2:00 – 3:00 pm", 
+      event: "Short Paper / Challenge Honorable Mentions",
+      details: "each 5 mins talk + 2mins Q&A",
+      presentations: presentations.afternoon
+    },
+    { time: "3:00 - 3:30pm", event: "Poster Session and Networking" },
+    { time: "3:30 – 4:00 pm", event: "Afternoon Coffee Break", highlight: true },
+    { 
+      time: "4:00 – 5:00 pm", 
+      event: "Keynote by the invited speaker",
+      details: "45 mins + 15 mins Q&A"
+    },
+    { time: "5:00 – 5:10 pm", event: "Workshop summary" }
+  ];
+
   return (
     <section id="schedule" className="section">
-      <h2 className="text-3xl font-bold text-gray-800 mb-4">Schedule</h2>
-  <div className="overflow-x-auto mb-10 rounded-lg">
-
-        <p>Detailed presentation order will be announced soon!</p>
-
-        <table className="border border-gray-300 table-fixed" style={{ maxWidth: "860px", width: "100%" }}>
-          <colgroup>
-            <col style={{ width: "250px", maxWidth: "250px" }} />
-          </colgroup>
-          <tbody className="divide-y divide-gray-200">
-            <tr className="bg-gray-300">
-              <td className="px-4 py-2 align-top font-bold">
-                Vienna Time (UTC+2)
-              </td>
-              <td className="px-4 py-2 font-bold">Events</td>
-            </tr>
-            <tr>
-              <td className="px-4 py-2 align-top">
-                8:30 – 9:00 am
-              </td>
-              <td className="px-4 py-2">
-                Arrival & Breakfast / Registration
-              </td>
-            </tr>
-            <tr>
-              <td className="px-4 py-2 align-top">9:00 – 9:05 am</td>
-              <td className="px-4 py-2">Welcome & Opening Remarks</td>
-            </tr>
-            <tr>
-              <td className="px-4 py-2 align-top">9:05 – 10:05 am</td>
-              <td className="px-4 py-2">
-                Keynote by the invited speaker
-                <br />
-                <span className="text-sm text-gray-600">
-                  (45 mins + 15 mins Q&A)
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td className="px-4 py-2 align-top">10:05 – 10:30 am</td>
-              <td className="px-4 py-2">
-                Challenge awards.
-                Winner and Runner up presentation
-                <br />
-                <span className="text-sm text-gray-600">
-                  (each 7 mins talks + 3 mins Q&amp;A)
-                </span>
-              </td>
-            </tr>
-
-            <tr className="bg-gray-100">
-              <td className="px-4 py-2 align-top">10:30 – 11:00 am</td>
-              <td className="px-4 py-2">Morning Coffee Break</td>
-            </tr>
-
-            <tr>
-              <td className="px-4 py-2 align-top">11:00 - 12:00 pm</td>
-              <td className="px-4 py-2">
-                9 presentations (paper / challenge honorable mentions)
-                <br />
-                <span className="text-sm text-gray-600">
-                  (each 5 mins talk + 2mins Q&amp;A)
-                </span>
-              </td>
-            </tr>
-
-            <tr>
-              <td className="px-4 py-2 align-top">12:00 – 12:30 pm</td>
-              <td className="px-4 py-2">Poster Session and Networking</td>
-            </tr>
-
-            <tr className="bg-gray-100">
-              <td className="px-4 py-2 align-top">12:30 – 2:00 pm</td>
-              <td className="px-4 py-2">Lunch Break</td>
-            </tr>
-
-            <tr>
-              <td className="px-4 py-2 align-top">2:00 – 3:00 pm</td>
-              <td className="px-4 py-2">
-                9 presentations (paper / challenge honorable mentions)
-                  <br />
-                <span className="text-sm text-gray-600">
-                  (each 5 mins talk + 2mins Q&amp;A)
-                </span>
-              </td>
-            </tr>
-
-            <tr>
-              <td className="px-4 py-2 align-top">3:00 - 3:30pm</td>
-              <td className="px-4 py-2">Poster Session and Networking</td>
-            </tr>
-
-            <tr className="bg-gray-100">
-              <td className="px-4 py-2 align-top">3:30 – 4:00 pm</td>
-              <td className="px-4 py-2">Afternoon Coffee Break</td>
-            </tr>
-
-            <tr>
-              <td className="px-4 py-2 align-top">4:00 – 5:00 pm</td>
-              <td className="px-4 py-2">
-                Keynote by the invited speaker
-                <br />
-                <span className="text-sm text-gray-600">
-                  (45 mins + 15 mins Q&A)
-                </span>
-              </td>
-            </tr>
-
-            <tr>
-              <td className="px-4 py-2 align-top">5:00 – 5:10 pm</td>
-              <td className="px-4 py-2">Workshop summary</td>
-            </tr>
-
-          </tbody>
-        </table>
-      </div>
+      <h2 className="text-3xl font-bold text-gray-800 mb-2">Schedule</h2>
+      {loading ? (
+        <div className="text-gray-600">Loading schedule...</div>
+      ) : (
+        <div className="overflow-x-auto mb-1 rounded-lg">
+          <ScheduleTable>
+            <ScheduleRow 
+              time="Vienna Time (UTC+2)" 
+              event="Events" 
+              isHeader 
+              highlight 
+            />
+            {scheduleData.map((item, index) => (
+              <ScheduleRow key={index} {...item} />
+            ))}
+          </ScheduleTable>
+        </div>
+      )}
     </section>
   );
 }
