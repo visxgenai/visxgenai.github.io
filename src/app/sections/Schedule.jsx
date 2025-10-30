@@ -181,7 +181,7 @@ export default function FullSchedule() {
         <div className="overflow-x-auto mb-1 rounded-lg">
           <ScheduleTable>
             <ScheduleRow 
-              time="Vienna Time (UTC+2)" 
+              time="All times in CET (UTC +1).)" 
               event="Events" 
               isHeader 
               highlight 

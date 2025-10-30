@@ -6,7 +6,7 @@ import Home from "./sections/Home";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "VISxGenAI",
+  title: "1st VISxGenAI Workshop at IEEE VIS 2025",
   description:
     "Workshop on GenAI, Agents, and the Future of VIS",
   icons: {
