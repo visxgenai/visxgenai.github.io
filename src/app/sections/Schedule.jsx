@@ -134,42 +134,42 @@ export default function FullSchedule() {
   }, []);
 
   const scheduleData = [
-    { time: "8:30 – 9:00 am", event: "Arrival & Breakfast / Registration" },
-    { time: "9:00 – 9:05 am", event: "Welcome & Opening Remarks" },
+    { time: "8:30am - 9:00am", event: "Arrival & Breakfast / Registration" },
+    { time: "9:00am - 9:05am", event: "Welcome & Opening Remarks", highlight: true },
     { 
-      time: "9:05 – 10:05 am", 
+      time: "9:05am - 10:05am", 
       event: "Keynote by the invited speaker",
       details: "45 mins + 15 mins Q&A"
     },
     { 
-      time: "10:05 – 10:30 am", 
+      time: "10:05am - 10:30am", 
       event: "Challenge Awards. Winner and Runner up presentation",
       details: "each 7 mins talk + 3 mins Q&A",
       presentations: presentations.awards
     },
-    { time: "10:30 – 11:00 am", event: "Morning Coffee Break", highlight: true },
+    { time: "10:30am - 11:00am", event: "Morning Coffee Break", highlight: true },
     { 
-      time: "11:00 - 12:00 pm", 
+      time: "11:00am - 12:00pm", 
       event: "Short Paper / Challenge Honorable Mentions",
       details: "each 5 mins talk + 2mins Q&A",
       presentations: presentations.morning
     },
-    { time: "12:00 – 12:30 pm", event: "Poster Session and Networking" },
-    { time: "12:30 – 2:00 pm", event: "Lunch Break", highlight: true },
+    { time: "12:00am - 12:30pm", event: "Poster Session and Networking" },
+    { time: "12:30am - 2:00pm", event: "Lunch Break", highlight: true },
     { 
-      time: "2:00 – 3:00 pm", 
+      time: "2:00am - 3:00pm", 
       event: "Short Paper / Challenge Honorable Mentions",
       details: "each 5 mins talk + 2mins Q&A",
       presentations: presentations.afternoon
     },
-    { time: "3:00 - 3:30pm", event: "Poster Session and Networking" },
-    { time: "3:30 – 4:00 pm", event: "Afternoon Coffee Break", highlight: true },
+    { time: "3:00am - 3:30pm", event: "Poster Session and Networking" },
+    { time: "3:30am - 4:00pm", event: "Afternoon Coffee Break", highlight: true },
     { 
-      time: "4:00 – 5:00 pm", 
+      time: "4:00am - 5:00pm", 
       event: "Keynote by the invited speaker",
       details: "45 mins + 15 mins Q&A"
     },
-    { time: "5:00 – 5:10 pm", event: "Workshop summary" }
+    { time: "5:00am - 5:10pm", event: "Workshop summary" }
   ];
 
   return (

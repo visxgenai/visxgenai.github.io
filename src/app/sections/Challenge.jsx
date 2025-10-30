@@ -72,7 +72,7 @@ export default function Challenge() {
   {/* Honorable Mentions */}
   <div className="flex flex-col items-center p-3 rounded-md border border-gray-300">
     <h3 className="mt-1 text-sm font-semibold text-center">
-      <span className="text-xl" role="img" aria-label="bronze medal">🏅</span> Honorable Mention <span className="text-[10px] font-normal">(x3 teams)</span>
+      <span className="text-xl" role="img" aria-label="bronze medal">🎖</span> Honorable Mention <span className="text-[10px] font-normal">(x3 teams)</span>
     </h3>
     <p className="text-lg font-medium mt-1">$500&nbsp;<span className="text-[12px] font-normal">each</span></p>
     <p className="text-xs">in AWS cloud credits</p>
