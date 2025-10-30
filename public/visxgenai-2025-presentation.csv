@@ -4,7 +4,7 @@
 1342,morning,short-paper,in-person,João Palmeiro,joaommpalmeiro@gmail.com,Benchmark It Yourself (BIY): Preparing a Dataset and Benchmarking AI Models for Scatterplot-Related Tasks,,"João Palmeiro, Diogo Ramalho Duarte, Rita Costa, Pedro Bizarro"
 2501,morning,short-paper,in-person,Kuangshi Ai,kai@nd.edu,An Evaluation-Centric Paradigm for Scientific Visualization Agents,,"Kuangshi Ai, Haichao Miao, Zhimin Li, Chaoli Wang, Shusen Liu"
 9766,morning,short-paper,in-person,Marco Angelini,m.angelini@unilink.it,True (VIS) Lies: A Preliminary Analysis of How Generative AI is Capable of Recognizing Visualization Lies and their Rhetoric,,"Graziano Blasilli, Marco Angelini"
-8601,morning,short-paper,in-person,Devin Lange,devin@sci.utah.edu,A Generative AI System for Biomedical Data Discovery with Grammar-Based Visualizations,,
+8601,morning,short-paper,in-person,Devin Lange,devin@sci.utah.edu,A Generative AI System for Biomedical Data Discovery with Grammar-Based Visualizations,https://arxiv.org/abs/2509.16454,"Devin Lange, Shanghua Gao, Pengwei Sui, Austen Money, Priya Misner, Marinka Zitnik, Nils Gehlenborg"
 1346,morning,short-paper,in-person,Zhicheng Liu,leozcliu@umd.edu,Contextualized Dynamic Explanations: A Vision,,"Zhicheng Liu, Jason H Li, Greg Briskin"
 6199,morning,short-paper,in-person,Junjie Xiong,xiongjj2025@shanghaitech.edu.cn,LLM4VA: A Multi-Agent LLM Framework for Automated Prototyping of Visual Analytics Systems,,"Junjie Xiong, Longfei Chen, Xiaofeng Dou, Shiwei Wang, Ken Lin, Sibei Yang, Quan Li"
 4479,morning,short-paper,in-person,Yu Zhang,yuzhang94@outlook.com,Position Paper: Validatory Visualization for Human-GenAI Co-Creation,,"Yu Zhang, Yuheng Zhao, Yuhan Guo, Guozheng Li, Siming Chen, Xiaoru Yuan"
@@ -15,7 +15,7 @@
 1558,afternoon,short-paper,in-person,Lijie Yao,yaolijie0219@gmail.com,Early Exploration into AI-Assisted Visual Analytics for Dynamic Videos,,"Qi Guo, Junyi Li, Jiayi Hong, Lijie Yao"
 1389,afternoon,short-paper,in-person,Laura Pelchmann,laura.pelchmann@uni-koeln.de,AI or Humans: Who Designs Better Dashboard Layouts? An Initial Study,,"Luca Theile, Savyasachi Pande, Laura Pelchman, Tatiana von Landesberger"
 8438,afternoon,short-paper,in-person,Timo Brand,timo.brand@tum.de,Visualization Biases MLLM’s Decision Making in Network Data Tasks,,"Timo Brand, Henry Förster, Jacob Miller, Stephen Kobourov"
-2679,afternoon,short-paper,virtual,Devin Lange,devin@sci.utah.edu,GQVis: A Dataset of Genomics Data Questions and Visualizations for Generative AI,,
+2679,afternoon,short-paper,virtual,Devin Lange,devin@sci.utah.edu,GQVis: A Dataset of Genomics Data Questions and Visualizations for Generative AI,https://www.arxiv.org/abs/2510.13816,"Skylar Sargent Walters, Arthea Valderrama, Thomas C. Smits, David Kouřil, Huyen N. Nguyen, Sehi L'Yi, Devin Lange, Nils Gehlenborg"
 4565,afternoon,short-paper,virtual,Jiahang He,jhe.primary@gmail.com,An Evaluation of Vision-Language Models on Graph Reconstruction,,"Jiahang He, Vamanie Perumal, Ishan Jain"
 7597,afternoon,challenge-honorable,virtual,Shuyu Gan,gan00067@umn.edu, A2P-Vis: an Analyzer-to-Presenter Agentic Pipeline for Visual Insights Generation and Reporting],,"Shuyu Gan, Renxiang Wang, James Mooney, and Dongyeop Kang"
 5817,afternoon,challenge,virtual,Robert Specht,robertspecht01@gmail.com,The Ted Lasso of Visual Analytics,,"Robert Specht, Qianwen Wang"
