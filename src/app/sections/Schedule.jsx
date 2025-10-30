@@ -15,12 +15,12 @@ function Presentation(props) {
   const displayedAuthers = authers ? authers : presenter;
   return (
     <div className="mb-2">
-      {type === "challenge-winner" ? "🥇": 
+      {/* {type === "challenge-winner" ? "🥇": 
       type === "challenge-runnerup" ? "🥈": 
       type === "challenge-honorable" ? "🎖": 
       type === "short-paper" ? "📝": 
       type === "challenge" ? "🏆": 
-      ""}
+      ""} */}
         {/* <a 
           href={link} 
           className="text-blue-500 hover:text-blue-600"
