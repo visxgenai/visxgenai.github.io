@@ -16,27 +16,36 @@ function Presentation(props) {
   const displayedAuthers = authers ? authers : presenter;
   const connected_link = link ? link : link_pdf;
   return (
-    <div className="mb-2">
+    <div className="mb-3">
       {/* {type === "challenge-winner" ? "🥇": 
       type === "challenge-runnerup" ? "🥈": 
       type === "challenge-honorable" ? "🎖": 
       type === "short-paper" ? "📝": 
       type === "challenge" ? "🏆": 
       ""} */}
-        <a 
+        {/* <a 
           href={connected_link} 
           // className="text-blue-500 hover:text-blue-600"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          {" "}
+        > */}
+          {/* {" "} */}
           <span className="text-blue-400">
            {title}
            </span>
-          {" "}
-        </a>
+                     {/* {" "} */}
+        {/* </a> */}
       <br />
-        <span className="text-gray-600">by {displayedAuthers}</span>
+        <span className="text-black-600">by {displayedAuthers}</span>
+    <br />
+      {link !== "#" ? 
+        <a href={link} 
+        className="text-sm text-gray-500 hover:underline"
+        target="_blank" 
+        rel="noopener noreferrer">[Generated Report]
+        </a> : 
+      ""}
+
     </div>
   );
 }
