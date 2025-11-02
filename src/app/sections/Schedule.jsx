@@ -10,9 +10,11 @@ function Presentation(props) {
     presentMode,
     title,
     link,
+    link_pdf,
     authers
   } = props;
   const displayedAuthers = authers ? authers : presenter;
+  const connected_link = link ? link : link_pdf;
   return (
     <div className="mb-2">
       {/* {type === "challenge-winner" ? "🥇": 
@@ -21,18 +23,18 @@ function Presentation(props) {
       type === "short-paper" ? "📝": 
       type === "challenge" ? "🏆": 
       ""} */}
-        {/* <a 
-          href={link} 
-          className="text-blue-500 hover:text-blue-600"
+        <a 
+          href={connected_link} 
+          // className="text-blue-500 hover:text-blue-600"
           target="_blank"
           rel="noopener noreferrer"
-        > */}
+        >
           {" "}
           <span className="text-blue-400">
            {title}
            </span>
           {" "}
-        {/* </a> */}
+        </a>
       <br />
         <span className="text-gray-600">by {displayedAuthers}</span>
     </div>
