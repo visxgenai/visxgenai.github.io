@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../../style/normalize.css" />
+  <link rel="stylesheet" href="../../style/pcs.css" />
+  <script src="../../js/moment.min.js"></script>
+
+
+
+<script src="/static/js/jquery.leanModal.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() { $("a[rel*=modal]").leanModal(); });
+</script><link rel="stylesheet" href="/static/css/awesomplete.css">
+<script type="text/javascript" src="/static/js/awesomplete.js"></script><script type="text/javascript" src="/static/js/userSuggest.js"></script>
+
+<script>
+  
+    var trackID = 'vis25z';
+  
+    var autocompleteTrackID = '';
+</script>
+
+
+<script src="/static/js/moment.min.js"></script>
+
+<script src="/static/js/discussion.js"></script><script type="text/javascript" src="/static/js/asyncUpdate.js"></script>  <script>
+  $( document ).ready(function() {
+    $('#user-name').attr('placeholder', ' Provide name or email.');
+  });
+
+  </script>
+  <style>
+    ::-webkit-input-placeholder { font-size: 80%; }
+    ::-moz-placeholder { font-size: 80%; }
+    :-ms-input-placeholder { font-size: 80%; }
+    :-moz-placeholder { font-size: 80%; }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logos">
+      <div class="left">
+        <img src="../../style/logo.png" alt=" logo">
+      </div>
+      <div class="middle"></div>
+      <div class="right"></div>
+    </div>
+    <nav>
+      <div class="left" style="padding-left: 0.5em">offline</div>
+      <div class="middle"></div>
+      <div class="right">
+        <a href="../../index.html">main page</a>
+      </div>
+    </nav>
+    <div style="height: 1.5em"></div>
+  </header>
+
+  <main>
+
+
+
+  <h1>Final Submission 5817 <span class="h1SubTitle">The Ted Lasso of Visual Analytics</span></h1>
+    <div class="indent">
+      <span class="otherConflict">
+        Chair conflicts: Chen Zhu-Tian and Nam Wook Kim
+      </span>
+    </div>
+
+
+<div class="indent">
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+  
+
+  
+
+  <div class="formOutputList">
+          
+
+      <div class="submissionTitle">
+        The Ted Lasso of Visual Analytics
+      </div>
+
+    
+          
+
+      <h2>Authors</h2>
+
+      <ul class="authorList">
+        
+        <li>
+          
+          <span>Robert Specht</span>
+          
+          <span>Computer Science/Statistics , University of Minnesota , Minneapolis , Minnesota, United States, spech065@umn.edu</span>
+          
+        </li>
+        
+      </ul>
+
+    
+            
+
+    <h2>Paper Submission</h2>
+
+      <div class=formItem>
+          
+           <a href="5817-doc.pdf">The file</a> 
+           (1.4 MB) 
+      </div>
+
+    
+            
+
+    <h2>Supplemental Material (optional)</h2>
+
+      <div class=formItem>
+          <em>(no file)</em>
+      </div>
+
+    
+  </div>
+
+</div>
+
+
+
+  <br><a href="../../index.html">Return to main page</a>
+  
+
+  <div id="contact" style="display:none" class="modal">
+
+      <h2>Change contact</h2>
+
+      <a class="modal_close" href="#"><span class="visually-hidden">close this popup</span><span aria-hidden="true">&#10799;</span></a>
+
+      <form action="/vis25z/chair/subs/5817/change_contact?final=1" 
+            id='change_contact'
+            onsubmit="return addReviewer('change_contact','contact')"
+            style="margin-top: 0em;" 
+            method="POST">
+
+        <input id="csrf_token" name="csrf_token" type="hidden" value="20251105123809##0b5362e80c1c67a0f1fb13a5abd68be4e91c8e72">
+        <table style="display: inline-table;"><tr><th><label for="contact-name">New contact</label></th><td><input id="contact-enc_id" name="contact-enc_id" type="hidden" value=""><input class="userID" id="contact-name" name="contact-name" type="text" value=""></td></tr></table>
+
+        <input type=submit style="vertical-align:top" value="Change">
+
+      </form>
+
+  </div>
+  
+
+    
+
+    <script>
+    function change_track( event ) {
+      location.href = "/vis25z/chair/subs/5817/change_track?otherTrackID=" + $( '#otherTrackIDs' ).val();
+      event.preventDefault();
+    }
+    </script>
+
+    <div id="changeTrack" style="display:none" class="modal">
+
+        <h2>Move submission to another track</h2>
+
+        <a class="modal_close" href="#"><span class="visually-hidden">close this popup</span><span aria-hidden="true">&#10799;</span></a>
+
+        <form id='change_track'
+              style="margin-top: 0em;" 
+              onsubmit="change_track(event)"
+              method="GET">
+
+          <input id="csrf_token" name="csrf_token" type="hidden" value="20251105123809##0b5362e80c1c67a0f1fb13a5abd68be4e91c8e72">
+          <select id="otherTrackIDs" name="otherTrackIDs"><option value=""></option><option value="vis25h">VIS 2025 Arts Program</option><option value="vis25w">VIS 2025 Bio+MedVis Challenge</option><option value="vis25g">VIS 2025 Doctoral Colloquium</option><option value="vis25q">VIS 2025 ECWIDNA</option><option value="vis25r">VIS 2025 EduVis</option><option value="vis25a">VIS 2025 Full Papers</option><option value="vis25t">VIS 2025 HFIA</option><option value="vis25u">VIS 2025 LDAV Papers</option><option value="vis25v">VIS 2025 LDAV Posters</option><option value="vis25p">VIS 2025 MERCADO</option><option value="vis25f">VIS 2025 Panels</option><option value="vis25c">VIS 2025 Posters</option><option value="vis25y">VIS 2025 SciVis Contest</option><option value="vis25b">VIS 2025 Short Papers</option><option value="vis25i">VIS 2025 TopoInVis Full Papers</option><option value="vis25j">VIS 2025 TopoInVis Posters</option><option value="vis25e">VIS 2025 Tutorials</option><option value="vis25o">VIS 2025 Uncertainty Visualization</option><option value="vis25n">VIS 2025 VAHC</option><option value="vis25x">VIS 2025 VAST Challenge</option><option value="vis25s">VIS 2025 VIS4DH</option><option value="vis25m">VIS 2025 VISxAI</option><option value="vis25k">VIS 2025 VisComm</option><option value="vis25d">VIS 2025 Workshops</option><option value="vis25l">VIS 2025 alt.vis</option></select>
+
+          <p><input type=submit style="vertical-align:top" value="Continue to the next step">
+
+        </form>
+
+    </div>
+
+  </main>
+
+  <footer>
+  </footer>
+    
+</body>
+</html>
