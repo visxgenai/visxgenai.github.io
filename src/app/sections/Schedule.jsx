@@ -5,6 +5,7 @@ import Papa from "papaparse";
 
 function Presentation(props) {
   const { 
+    submissionId,
     presenter,
     type,
     presentMode,
@@ -15,6 +16,7 @@ function Presentation(props) {
   } = props;
   const displayedAuthers = authers ? authers : presenter;
   const connected_link = link ? link : link_pdf;
+  const pdf_link = `https://visxgenai.github.io/subs-2025/${submissionId}/${submissionId}-doc.pdf`;
   return (
     <div className="mb-3">
       {/* {type === "challenge-winner" ? "🥇": 
@@ -38,9 +40,17 @@ function Presentation(props) {
       <br />
         <span className="text-black-600">by {displayedAuthers}</span>
     <br />
+      {pdf_link !== "#" ? 
+        <a href={pdf_link} 
+        className="text-sm text-gray-600 hover:underline mr-2"
+        target="_blank" 
+        rel="noopener noreferrer">[Camera-ready]
+        </a> : 
+      ""} 
+
       {link !== "#" ? 
         <a href={link} 
-        className="text-sm text-gray-500 hover:underline"
+        className="text-sm text-gray-600 hover:underline"
         target="_blank" 
         rel="noopener noreferrer">[Generated Report]
         </a> : 
@@ -118,6 +128,7 @@ export default function FullSchedule() {
           const session = (row['present-session'] || '').trim().toLowerCase();
           
           const presentation = {
+            submissionId: row.submissionId,
             title: row.title,
             authers: row.authers || "",
             link: row.link || "#",
