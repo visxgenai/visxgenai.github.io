@@ -8,6 +8,7 @@ function Presentation(props) {
     submissionId,
     presenter,
     type,
+    session,
     presentMode,
     title,
     link,
@@ -17,45 +18,49 @@ function Presentation(props) {
   const displayedAuthers = authers ? authers : presenter;
   const connected_link = link ? link : link_pdf;
   const pdf_link = `https://visxgenai.github.io/subs-2025/${submissionId}/${submissionId}-doc.pdf`;
+
+  const titleHref = (connected_link && connected_link !== "#") ? connected_link : pdf_link;
+  const titleEl = (session === "poster")
+    ? (
+      <a
+        href={titleHref}
+        className="text-blue-400 hover:underline"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {title}
+      </a>
+    )
+    : <span className="text-blue-400">{title}</span>;
+
   return (
     <div className="mb-3">
-      {/* {type === "challenge-winner" ? "🥇": 
-      type === "challenge-runnerup" ? "🥈": 
-      type === "challenge-honorable" ? "🎖": 
-      type === "short-paper" ? "📝": 
-      type === "challenge" ? "🏆": 
-      ""} */}
-        {/* <a 
-          href={connected_link} 
-          // className="text-blue-500 hover:text-blue-600"
+      {titleEl}
+      <br />
+      <span className="text-black-600">by {displayedAuthers}</span>
+      <br />
+
+      {session !== "poster" && pdf_link !== "#" ? (
+        <a
+          href={pdf_link}
+          className="text-sm text-gray-600 hover:underline mr-2"
           target="_blank"
           rel="noopener noreferrer"
-        > */}
-          {/* {" "} */}
-          <span className="text-blue-400">
-           {title}
-           </span>
-                     {/* {" "} */}
-        {/* </a> */}
-      <br />
-        <span className="text-black-600">by {displayedAuthers}</span>
-    <br />
-      {pdf_link !== "#" ? 
-        <a href={pdf_link} 
-        className="text-sm text-gray-600 hover:underline mr-2"
-        target="_blank" 
-        rel="noopener noreferrer">[Camera-ready]
-        </a> : 
-      ""} 
+        >
+          [PDF]
+        </a>
+      ) : ""}
 
-      {link !== "#" ? 
-        <a href={link} 
-        className="text-sm text-gray-600 hover:underline"
-        target="_blank" 
-        rel="noopener noreferrer">[Generated Report]
-        </a> : 
-      ""}
-
+      {session !== "poster" && link !== "#" ? (
+        <a
+          href={link}
+          className="text-sm text-gray-600 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          [Generated Report]
+        </a>
+      ) : ""}
     </div>
   );
 }
@@ -121,7 +126,8 @@ export default function FullSchedule() {
         const grouped = {
           awards: [],
           morning: [],
-          afternoon: []
+          afternoon: [],
+          poster: []
         };
         
         results.data.forEach(row => {
@@ -132,9 +138,11 @@ export default function FullSchedule() {
             title: row.title,
             authers: row.authers || "",
             link: row.link || "#",
+            // (No need to add link_pdf unless you have it in CSV)
             type: row.type,
             presentMode: row['present-mode'] || "",
             presenter: row.presenter || "",
+            session: session,
           };
           if (session === 'award') {
             grouped.awards.push(presentation);
@@ -142,6 +150,8 @@ export default function FullSchedule() {
             grouped.morning.push(presentation);
           } else if (session === 'afternoon') {
             grouped.afternoon.push(presentation);
+          } else if (session === 'poster') {
+            grouped.poster.push(presentation);
           }
         });
         
@@ -184,7 +194,9 @@ export default function FullSchedule() {
       details: "each 5 mins talk + 2mins Q&A",
       presentations: presentations.afternoon
     },
-    { time: "3:00am - 3:30pm", event: "Poster Session and Networking" },
+    { time: "3:00am - 3:30pm", event: "Poster Session and Networking", 
+      presentations: presentations.poster
+    },
     { time: "3:30am - 4:00pm", event: "Afternoon Coffee Break", highlight: true },
     { 
       time: "4:00am - 5:00pm", 
