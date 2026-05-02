@@ -21,7 +21,7 @@ export default function ResponsiveNavbar() {
   const navItems = [
     // { name: 'VISxGenAI', href: '/' },
     { name: "About", href: "#about" },
-    { name: "Call for Participants", href: "#cfp" },
+    { name: "Topics", href: "#topics" },
     // { name: "Call for Papers", href: "#cfp" },
     // { name: "Challenge", href: "#challenge" },
     { name: "Dates", href: "#important-dates" },
@@ -30,15 +30,15 @@ export default function ResponsiveNavbar() {
     // { name: 'Vision', href: '#vision' },
     // { name: 'Agent playground', href: '/agent-playground' },
     // { name: 'Program Committee', href: '#pc' },
-    { name: "Schedule", href: "#schedule" },
+    { name: "Program", href: "#program" },
     { name: "Organizers", href: "#organizers" },
-    { name: "Sponsor", href: "#sponsor" },
     { name: "Contact", href: "#contact" },
+    { name: "2025 Archive", href: "/2025/index.html" },
   ];
 
   useEffect(() => {
-    const nav = document.querySelector("nav");
     const exampleSection = document.getElementById(navItems[0].href.slice(1));
+    if (!exampleSection) return;
     const marginTop = parseInt(
       getComputedStyle(exampleSection).scrollMarginTop,
       10
@@ -155,7 +155,7 @@ export default function ResponsiveNavbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block px-3 py-2 rounded-md text-[#333] hover:bg-[#ACD2ED] transition-colors text-base font-medium"
+                className="block px-3 py-2 text-[#333] hover:bg-[#ACD2ED] transition-colors text-base font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

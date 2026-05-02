@@ -1,96 +1,134 @@
-import Dates from "./sections/Dates";
-import Intro from "./sections/Intro";
-import CFP from "./sections/CFP";
-import PC from "./sections/PC";
-import Organizers from "./sections/Organizers";
-import Vision from "./sections/Vision";
-import Schedule from "./sections/Schedule";
 import Home from "./sections/Home";
-import Challenge from "./sections/Challenge";
-import CallForParticipants from "./sections/CallForParticipants";
-import Contact from "./sections/Contact";
-import Speakers from "./sections/Speakers";
+
 export default function AIVisualizationWorkshop() {
-  // Example visualization articles with their corresponding letters
-  const exampleArticles = [
-    {
-      id: "a",
-      title: "A Visual Exploration of Gaussian Processes",
-      authors: "Görtler, Kehlbeck, and Deussen",
-      year: "2018",
-      link: "https://distill.pub/2019/visual-exploration-gaussian-processes/",
-    },
-    {
-      id: "b",
-      title: "What Makes Language Models Learned?",
-      authors: "Adam Pearce",
-      year: "2021",
-      link: "#",
-    },
-    {
-      id: "c",
-      title: "What if we Reduce the Memory of an Artificial Doom Player?",
-      authors: "Jaunet, Vuillemot, and Wolf",
-      year: "2019",
-      link: "#",
-    },
-    {
-      id: "d",
-      title: "K-Means Clustering: An Explorable Explainer",
-      authors: "Yi Zhe Ang",
-      year: "2022",
-      link: "#",
-    },
-    {
-      id: "e",
-      title: "Comparing DNNs with UMAP Tour",
-      authors: "Li and Scheidegger",
-      year: "2020",
-      link: "#",
-    },
-    {
-      id: "f",
-      title: "Can Large Language Models Explain Their Internal Mechanisms?",
-      authors: "Hussein, Ghandeharioun, Mullins, Reif, Wilson, Thain, Dixon",
-      year: "2024",
-      link: "#",
-    },
-    {
-      id: "g",
-      title: "FormaFluens Data Experiment",
-      authors: "Strobelt, Phibbs, and Martino",
-      year: "",
-      link: "#",
-    },
-    {
-      id: "h",
-      title: "The Beginner's Guide to Dimensionality Reduction",
-      authors: "Conlen and Hohman",
-      year: "2018",
-      link: "#",
-    },
+  const organizers = [
+    { name: "Zhu-Tian Chen", affiliation: "University of Minnesota-Twin Cities" },
+    { name: "Nam Wook Kim", affiliation: "Boston College" },
+    { name: "Saeed Boorboor", affiliation: "University of Illinois Chicago" },
+    { name: "Shivam Raval", affiliation: "Harvard University" },
+    { name: "Pan Hao", affiliation: "University of Minnesota-Twin Cities" },
+    { name: "Qianwen Wang", affiliation: "University of Minnesota-Twin Cities" },
+    { name: "Vidya Setlur", affiliation: "Tableau Research" },
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-2 font-lato">
-      <Intro />
-      <CallForParticipants />
-      <Dates />
-      <Speakers />
-      <Schedule />
-      <Organizers />
+    <>
+      <Home />
+      <div className="max-w-6xl mx-auto px-4 py-2 font-lato">
+        <section className="section" id="about">
+          <h1 className="text-3xl font-bold text-gray-800 mb-4">
+            About the Workshop
+          </h1>
+          <p className="text-gray-700 mb-4">
+            Recent advances in agents (i.e., autonomous, goal-driven AI systems
+            that iteratively observe, act, and learn from their environments)
+            offer a fundamentally different approach from traditional AI models
+            that passively respond to input. These agentic AI systems are
+            rapidly reshaping how we approach data-intensive tasks and providing
+            new opportunities for the VIS community. Imagine an agent
+            autonomously generating visualizations to analyze complex data,
+            discovering patterns collaboratively, testing hypotheses, and
+            communicating visual insights at a speed and scale beyond human
+            capability.
+          </p>
+          <p className="text-gray-700 mb-4">
+            Yet, the emergence of these powerful systems raises critical
+            questions that the VIS community must address: Could autonomous
+            agents eventually replace human data scientists, and if not, how
+            might they best collaborate? Are current visualization techniques
+            and interfaces, originally designed for human analysts, suitable
+            for agent interactions? How can VIS designers effectively integrate
+            agents into their workflows without compromising human agency? And
+            to what extent should agents help shape and educate the next
+            generation of visualization researchers?
+          </p>
+          <p className="text-gray-700 mb-4">
+            Through a mix of keynote talks, paper presentations, and an agentic
+            VIS challenge, this workshop invites researchers and practitioners
+            to share innovative ideas, explore these questions, and discuss
+            strategies to transform the impact of VIS for a future where human
+            and AI agents co-exist.
+          </p>
+        </section>
 
-      <section className="section" id="sponsor">
-        <h2 className="text-3xl font-semibold text-gray-900 mb-4">Sponsor</h2>
-          Our workshop is sponsored by Amazon.
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-            alt="AWS"
-            className="w-1/5 h-1/5 object-cover mt-8"
-          />
-      </section>
+        <section className="section" id="topics">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            Topics of Interest
+          </h2>
+          <ul className="list-disc list-inside space-y-1 text-gray-700">
+            <li>Visual analytics for generative and foundation models</li>
+            <li>Human-agent collaboration in data analysis and visualization</li>
+            <li>Evaluation methods for agent-generated visual artifacts</li>
+            <li>Interactive systems for explaining, steering, and debugging AI</li>
+            <li>Visualization authoring workflows augmented by GenAI</li>
+            <li>Responsible, transparent, and trustworthy AI-mediated analysis</li>
+          </ul>
+        </section>
 
-      <Contact />
-    </div>
+        <section className="section" id="important-dates">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            Important Dates
+          </h2>
+          <ul className="space-y-1">
+            <li className="text-gray-700">
+              <span className="font-medium">Call for Participation:</span> TBA
+            </li>
+            <li className="text-gray-700">
+              <span className="font-medium">Submission Deadline:</span> TBA
+            </li>
+            <li className="text-gray-700">
+              <span className="font-medium">Author Notification:</span> TBA
+            </li>
+            <li className="text-gray-700">
+              <span className="font-medium">Camera Ready Deadline:</span> TBA
+            </li>
+            <li className="text-gray-700">
+              <span className="font-medium">November 9, 2026:</span> Workshop Day
+            </li>
+          </ul>
+        </section>
+
+        <section className="section" id="program">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Program</h2>
+          <p className="text-gray-700 mb-4">
+            The 2026 program is under development. Expected formats include
+            invited talks, paper or position presentations, demos, and
+            discussion sessions around the role of agents in visualization
+            research and practice.
+          </p>
+        </section>
+
+        <section className="section" id="organizers">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-4">
+            Organizers
+          </h2>
+          <ul className="list-disc list-inside space-y-1 text-gray-800">
+            {organizers.map((org) => (
+              <li
+                key={org.name}
+                className="flex flex-col sm:flex-row sm:space-x-4"
+              >
+                <span>{org.name}</span>
+                <span className="text-gray-500">{org.affiliation}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="section" id="contact">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Contact</h2>
+          <p className="text-gray-700">
+            For questions, contact{" "}
+            <a
+              className="font-medium text-blue-600 underline"
+              href="mailto:visxgenai@ieeevis.org"
+            >
+              visxgenai@ieeevis.org
+            </a>
+            .
+          </p>
+        </section>
+      </div>
+    </>
   );
 }
