@@ -71,16 +71,16 @@ export default function AIVisualizationWorkshop() {
           </h2>
           <ul className="space-y-1">
             <li className="text-gray-700">
-              <span className="font-medium">Call for Participation:</span> TBA
+              <span className="font-medium">Call for Participation:</span> May 30, 2026
             </li>
             <li className="text-gray-700">
-              <span className="font-medium">Submission Deadline:</span> TBA
+              <span className="font-medium">Submission Deadline:</span> Aug 15, 2026
             </li>
             <li className="text-gray-700">
-              <span className="font-medium">Author Notification:</span> TBA
+              <span className="font-medium">Author Notification:</span> Sep 10, 2026
             </li>
             <li className="text-gray-700">
-              <span className="font-medium">Camera Ready Deadline:</span> TBA
+              <span className="font-medium">Camera Ready Deadline:</span> Oct 1, 2026
             </li>
             <li className="text-gray-700">
               <span className="font-medium">November 9, 2026:</span> Workshop Day

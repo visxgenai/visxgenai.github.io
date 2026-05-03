@@ -6,7 +6,7 @@ export default function Home() {
         {/* Background image layer (absolute, fills entire container) */}
         <div className="absolute inset-0 w-full h-full">
           <img
-            src="/bg-v-2.png"
+            src="/bg-2026.png"
             alt="Workshop background"
             className="w-full h-full object-cover"
           />

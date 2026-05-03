@@ -7,6 +7,7 @@ export default function ResponsiveNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [bgOpacity, setBgOpacity] = useState(0);
   const [activeItem, setActiveItem] = useState("VIS x GenAI");
+  const navBackgroundRgb = "246, 211, 204";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,14 +66,14 @@ export default function ResponsiveNavbar() {
   const linkClasses = (name) =>
     `px-3 py-2 rounded-md text-base transition-colors ${
       activeItem === name ? "text-[#333] font-bold" : "text-[#333]"
-    } hover:bg-[#ACD2ED]`;
+    } hover:bg-[#F3B7A7]`;
 
   return (
     <nav
       className="fixed top-0 w-full z-50 py-2 px-10 font-sans text-lg"
       style={{
         transition: "background-color 0.3s ease",
-        backgroundColor: `rgba(218, 234, 245, ${bgOpacity})`,
+        backgroundColor: `rgba(${navBackgroundRgb}, ${bgOpacity})`,
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -108,7 +109,7 @@ export default function ResponsiveNavbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-[#333] hover:bg-[#ACD2ED] p-2 rounded-md focus:outline-none"
+              className="text-[#333] hover:bg-[#F3B7A7] p-2 rounded-md focus:outline-none"
             >
               <span className="sr-only">Open main menu</span>
               {!isMenuOpen ? (
@@ -155,7 +156,7 @@ export default function ResponsiveNavbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block px-3 py-2 text-[#333] hover:bg-[#ACD2ED] transition-colors text-base font-medium"
+                className="block px-3 py-2 text-[#333] hover:bg-[#F3B7A7] transition-colors text-base font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
