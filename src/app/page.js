@@ -51,18 +51,144 @@ export default function AIVisualizationWorkshop() {
           </p>
         </section>
 
-        <section className="section" id="topics">
+        <section className="section" id="tracks">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            Topics of Interest
+            Call for Participants
           </h2>
-          <ul className="list-disc list-inside space-y-1 text-gray-700">
-            <li>Visual analytics for generative and foundation models</li>
-            <li>Human-agent collaboration in data analysis and visualization</li>
-            <li>Evaluation methods for agent-generated visual artifacts</li>
-            <li>Interactive systems for explaining, steering, and debugging AI</li>
-            <li>Visualization authoring workflows augmented by GenAI</li>
-            <li>Responsible, transparent, and trustworthy AI-mediated analysis</li>
-          </ul>
+          <p className="text-gray-700 mb-5">
+            We invite participation through two submission tracks:{" "}
+            <span className="font-semibold">Short Paper</span> and{" "}
+            <span className="font-semibold">AgenticVIS Challenge</span>. Both
+            are opportunities to showcase novel ideas and engage with the
+            growing community at the intersection of visualization, generative
+            AI, and agentic systems.
+          </p>
+
+          <div className="grid items-start gap-6 md:grid-cols-2">
+            <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+                Track A: Short Paper
+              </h3>
+              <p className="text-gray-700 mb-4">
+                We invite short paper submissions (2-4 pages excluding
+                references) that explore topics across theory, systems, user
+                studies, and applications for GenAI or agentic VIS. Submissions must follow the VGTC conference
+                two-column format, consistent with the{" "}
+                <a
+                  className="text-blue-600 hover:underline"
+                  href="https://tc.computer.org/vgtc/publications/conference/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  IEEE VIS formatting guidelines
+                </a>
+                . Areas of interest include, but are not limited to, the
+                following:
+              </p>
+
+              <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                <li>
+                  <em>VIS for interpreting GenAI systems.</em>
+                  <details className="mt-1">
+                    <summary className="cursor-pointer text-sm text-[#407498] hover:text-[#24597E]">
+                      More information
+                    </summary>
+                    <div className="mt-2 rounded border border-gray-300 p-3 text-sm text-gray-700">
+                      <p>
+                        Papers presenting novel visualization techniques or
+                        systems for interpretability of frontier generative
+                        models, accompanied by interactive demos that showcase
+                        practical applications for GenAI researchers. Some
+                        example papers include:
+                      </p>
+                      <p className="mt-1">
+                        * Lee et. al. (2024). LLM Attributor: Interactive
+                        Visual Attribution for LLM Generation
+                      </p>
+                      <p className="mt-1">
+                        * Lin (2023). Neuronpedia: Interactive Reference and
+                        Tooling for Analyzing Neural Networks.
+                      </p>
+                    </div>
+                  </details>
+                </li>
+
+                <li>
+                  <em>Human-agent collaboration</em> in data analysis and
+                  visualization.
+                </li>
+                <li>
+                  <em>Agent-augmented VIS tools.</em>
+                </li>
+                <li>
+                  <em>VIS tools for agents</em> that agents themselves can
+                  perceive, reason over, or act upon.
+                </li>
+                <li>
+                  <em>Methods and benchmarks</em> for assessing agent
+                  performance and agent-generated visual artifacts.
+                </li>
+                <li>
+                  <em>Case studies and demos</em> of agent systems applied to
+                  real-world VIS problems.
+                </li>
+
+                                <li>
+                  <em>Position papers for VIS and AI researchers, such as agents in VIS education, VIS for embodied agents, or multi-agent coordination in visual reasoning.</em>
+                  <details className="mt-1">
+                    <summary className="cursor-pointer text-sm text-[#407498] hover:text-[#24597E]">
+                      More information
+                    </summary>
+                    <div className="mt-2 rounded border border-gray-300 p-3 text-sm text-gray-700">
+                      Brief position papers outlining research agendas,
+                      proposing benchmarks, tooling infrastructure, or
+                      suggesting collaborative projects between visualization
+                      and interpretability experts to enhance our understanding
+                      of the frontier models.
+                    </div>
+                  </details>
+                </li>
+              </ul>
+
+              <p className="text-gray-700 mt-4">
+                Short papers should be double-blind submissions. Initial
+                submissions must not include author names or institutions, and
+                authors should take care to avoid revealing identifying
+                information in the text.
+              </p>
+            </div>
+
+            <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+                Track B: AgenticVIS Challenge
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Participants will develop agents that take datasets and guiding
+                questions, adapted from past VAST Challenges, as input and
+                generate visual data reports as output.
+              </p>
+              <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                <li>
+                  Development datasets will be released before the deadline;
+                  hidden testing datasets will be used for final evaluation.
+                </li>
+                <li>
+                  During development, submissions may receive automated
+                  feedback, including benchmark metrics and agent-based peer
+                  evaluation.
+                </li>
+                <li>
+                  Final judging will consider each team's short technical report
+                  and the visual report generated by its agent on the testing
+                  dataset.
+                </li>
+              </ul>
+              <p className="mt-4 font-semibold italic text-gray-800">
+                Full challenge details and submission instructions will be
+                posted on the challenge website soon!
+              </p>
+            </div>
+          </div>
         </section>
 
         <section className="section" id="important-dates">
@@ -89,12 +215,9 @@ export default function AIVisualizationWorkshop() {
         </section>
 
         <section className="section" id="program">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Program</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Schedule and Keynote Speakers</h2>
           <p className="text-gray-700 mb-4">
-            The 2026 program is under development. Expected formats include
-            invited talks, paper or position presentations, demos, and
-            discussion sessions around the role of agents in visualization
-            research and practice.
+            TBD.
           </p>
         </section>
 
