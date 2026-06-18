@@ -165,7 +165,17 @@ export default function AIVisualizationWorkshop() {
               <p className="text-gray-700 mb-4">
                 Participants will develop agents that take datasets and guiding
                 questions, adapted from past VAST Challenges, as input and
-                generate visual data reports as output.
+                generate visual data reports as output. More details are
+                available on the challenge website:{" "}
+                <a
+                  className="text-blue-600 hover:underline"
+                  href="https://visagent.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                   visagent.org
+                </a>
+      
               </p>
               <ul className="list-disc pl-5 space-y-2 text-gray-700">
                 <li>
@@ -185,7 +195,7 @@ export default function AIVisualizationWorkshop() {
               </ul>
               <p className="mt-4 font-semibold italic text-gray-800">
                 Full challenge details and submission instructions will be
-                posted on the challenge website soon!
+                posted on the challenge website.
               </p>
             </div>
           </div>
