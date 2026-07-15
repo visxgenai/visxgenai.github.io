@@ -63,6 +63,12 @@ export default function AIVisualizationWorkshop() {
             growing community at the intersection of visualization, generative
             AI, and agentic systems.
           </p>
+          <p className="text-gray-700 mb-5">
+            For submissions to either track, use PCS and select{" "}
+            <span className="font-semibold">TVCG</span> &rarr;{" "}
+            <span className="font-semibold">VIS 2026</span> &rarr;{" "}
+            <span className="font-semibold">VISxGenAI</span>.
+          </p>
 
           <div className="grid items-start gap-6 md:grid-cols-2">
             <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
