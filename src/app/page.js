@@ -63,18 +63,20 @@ export default function AIVisualizationWorkshop() {
             growing community at the intersection of visualization, generative
             AI, and agentic systems.
           </p>
-          <p className="text-gray-700 mb-5">
-            For submissions to either track, use PCS and select{" "}
-            <span className="font-semibold">TVCG</span> &rarr;{" "}
-            <span className="font-semibold">VIS 2026</span> &rarr;{" "}
-            <span className="font-semibold">VISxGenAI</span>.
-          </p>
-
           <div className="grid items-start gap-6 md:grid-cols-2">
             <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                 Track A: Short Paper
               </h3>
+              <p className="mb-4 rounded-md border border-[#F3B7A7] bg-[#FDF1EE] px-4 py-3 text-gray-800">
+                <span className="font-semibold">Submission deadline:</span>{" "}
+                Aug 15, 2026
+              </p>
+              <p className="text-gray-700 mb-4">
+                <span className="font-semibold">PCS submission path:</span>{" "}
+                TVCG &rarr; VIS 2026 &rarr;{" "}
+                <span className="font-semibold">VISxGenAI</span>
+              </p>
               <p className="text-gray-700 mb-4">
                 We invite short paper submissions (2-4 pages excluding
                 references) that explore topics across theory, systems, user
@@ -168,6 +170,21 @@ export default function AIVisualizationWorkshop() {
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                 Track B: AgenticVIS Challenge
               </h3>
+              <p className="mb-4 rounded-md border border-[#F3B7A7] bg-[#FDF1EE] px-4 py-3 text-gray-800">
+                <span className="font-semibold">Challenge deadline:</span>{" "}
+                Aug 31, 2026
+                <span className="mt-1 block text-sm text-gray-600">
+                  Both the agent submission and anonymous technical report are
+                  due on this date.
+                </span>
+              </p>
+              <p className="text-gray-700 mb-4">
+                <span className="font-semibold">
+                  PCS submission path for the technical report:
+                </span>{" "}
+                TVCG &rarr; VIS 2026 &rarr;{" "}
+                <span className="font-semibold">VISxGenAI Challenge</span>
+              </p>
               <p className="text-gray-700 mb-4">
                 Participants will develop agents that take datasets and guiding
                 questions, adapted from past VAST Challenges, as input and
@@ -185,7 +202,7 @@ export default function AIVisualizationWorkshop() {
               </p>
               <ul className="list-disc pl-5 space-y-2 text-gray-700">
                 <li>
-                  Development datasets will be released before the deadline;
+                  Development datasets will be released before Aug 31, 2026;
                   hidden testing datasets will be used for final evaluation.
                 </li>
                 <li>
@@ -194,7 +211,7 @@ export default function AIVisualizationWorkshop() {
                   evaluation.
                 </li>
                 <li>
-                  By the submission deadline, participants must submit their
+                  By Aug 31, 2026, participants must submit their
                   best-performing agent through vis-arena.
                 </li>
                 <li>
@@ -251,7 +268,14 @@ export default function AIVisualizationWorkshop() {
               <span className="font-medium">Call for Participation:</span> May 30, 2026
             </li>
             <li className="text-gray-700">
-              <span className="font-medium">Submission Deadline:</span> Aug 15, 2026
+              <span className="font-medium">Track A Short Paper Deadline:</span>{" "}
+              Aug 15, 2026
+            </li>
+            <li className="text-gray-700">
+              <span className="font-medium">
+                Track B AgenticVIS Challenge Deadline:
+              </span>{" "}
+              Aug 31, 2026
             </li>
             <li className="text-gray-700">
               <span className="font-medium">Author Notification:</span> Sep 10, 2026
