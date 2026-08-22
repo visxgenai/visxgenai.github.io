@@ -11,6 +11,104 @@ export default function AIVisualizationWorkshop() {
     { name: "Vidya Setlur", affiliation: "Tableau Research" },
   ];
 
+  const reviewingCommittee = [
+    {
+      name: "Dennis Bromley",
+      affiliation: "Tableau Research",
+      profile: "https://www.tableau.com/research/people/dennis-bromley",
+    },
+    {
+      name: "Furui Cheng",
+      affiliation: "ETH Zürich",
+      profile: "https://www.furuicheng.tech/",
+    },
+    {
+      name: "Adam Coscia",
+      affiliation: "Stevens Institute of Technology",
+      profile: "https://adamcoscia.com/",
+    },
+    {
+      name: "Yu Fu",
+      affiliation: "University of Central Florida",
+      profile: "https://www.cs.ucf.edu/person/yufu/",
+    },
+    {
+      name: "Grace Guo",
+      affiliation: "Harvard University",
+      profile: "https://seas.harvard.edu/person/grace-guo-0",
+    },
+    {
+      name: "Hyeok Kim",
+      affiliation: "KAIST",
+      profile: "https://hyeok.me/",
+    },
+    {
+      name: "Fritz Lekschas",
+      affiliation: "Ridge AI",
+      profile: "https://lekschas.de/",
+    },
+    {
+      name: "Kylie Lin",
+      affiliation: "Georgia Institute of Technology",
+      profile: "https://kylierlin.github.io/",
+    },
+    {
+      name: "Maxim Lisnic",
+      affiliation: "Worcester Polytechnic Institute",
+      profile: "https://www.wpi.edu/people/faculty/mlisnic",
+    },
+    {
+      name: "Victor Mateevitsi",
+      affiliation: "Argonne National Laboratory",
+      profile: "https://www.alcf.anl.gov/about/people/victor-mateevitsi",
+    },
+    {
+      name: "Andrew McNutt",
+      affiliation: "University of Utah",
+      profile: "https://www.cs.utah.edu/andrew-mcnutt/",
+    },
+    {
+      name: "Huyen N. Nguyen",
+      affiliation: "Harvard Medical School",
+      profile: "https://huyennguyen.com/",
+    },
+    {
+      name: "Mahsan Nourani",
+      affiliation: "Northeastern University",
+      profile: "https://www.khoury.northeastern.edu/people/mahsan-nourani/",
+    },
+    {
+      name: "Luc Renambot",
+      affiliation: "University of Illinois Chicago",
+      profile: "https://cs.uic.edu/profiles/luc-renambot/",
+    },
+    {
+      name: "Carolina Veiga",
+      affiliation: "James Madison University",
+      profile: "https://www.jmu.edu/cise/people/faculty/veiga-carolina.shtml",
+    },
+    {
+      name: "Yifang Wang",
+      affiliation: "Florida State University",
+      profile: "https://www.cs.fsu.edu/department/faculty/yifang-wang/",
+    },
+    {
+      name: "Dylan Wootton",
+      affiliation: "Massachusetts Institute of Technology",
+      profile: "https://www.dylanwootton.com/",
+    },
+    {
+      name: "Catherine Yeh",
+      affiliation: "Harvard University",
+      profile: "https://kempnerinstitute.harvard.edu/people/our-people/catherine-yeh/",
+    },
+    {
+      name: "Yuheng Zhao",
+      affiliation: "Aalto University",
+      profile: "https://zyh1222.github.io/",
+    },
+  ];
+
   return (
     <>
       <Home />
@@ -294,6 +392,38 @@ export default function AIVisualizationWorkshop() {
           <p className="text-gray-700 mb-4">
             TBD.
           </p>
+        </section>
+
+        <section className="section" id="reviewing-committee">
+          <h2 className="text-3xl font-bold text-gray-800 mb-2">
+            Reviewing Committee
+          </h2>
+          <p className="text-gray-600 mb-4">
+            We thank our reviewers for contributing their time and expertise to
+            the workshop.
+          </p>
+          <ul className="grid grid-cols-2 gap-x-5 gap-y-4 text-sm text-gray-800 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+            {reviewingCommittee.map((reviewer) => (
+              <li key={reviewer.name} className="min-w-0">
+                <a
+                  href={reviewer.profile}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group -mx-1 flex items-start rounded-sm px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#407498] focus-visible:ring-offset-2"
+                  aria-label={`${reviewer.name}, ${reviewer.affiliation} (opens profile in a new tab)`}
+                >
+                  <span className="min-w-0">
+                    <span className="block text-base font-medium leading-tight group-hover:text-[#24597E] group-hover:underline">
+                      {reviewer.name}
+                    </span>
+                    <span className="mt-1 block text-xs leading-snug text-slate-500">
+                      {reviewer.affiliation}
+                    </span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </section>
 
         <section className="section" id="organizers">
