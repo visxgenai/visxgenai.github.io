@@ -387,11 +387,63 @@ export default function AIVisualizationWorkshop() {
           </ul>
         </section>
 
+        <section className="section" id="speakers">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            Keynote Speaker
+          </h2>
+          <div className="flex min-w-0 flex-col items-center">
+            <figure className="flex w-full max-w-[22rem] flex-col items-center justify-start text-center mx-auto">
+              <img
+                src="/wu_headshot.png"
+                alt="Eugene Wu"
+                width="575"
+                height="575"
+                className="w-full max-w-[14rem] aspect-square object-cover rounded-lg mb-4"
+              />
+              <figcaption className="w-full">
+                <h3 className="text-lg font-semibold text-center text-[#407498]">
+                  <a
+                    href="https://eugenewu.net/"
+                    className="underline hover:text-[#24597E]"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Eugene Wu's personal website (opens in a new tab)"
+                  >
+                    Eugene Wu
+                  </a>
+                </h3>
+              </figcaption>
+            </figure>
+            <div className="w-full max-w-2xl mt-2 min-w-0">
+              <p className="text-sm text-gray-600 text-justify mb-2">
+                <strong>Eugene Wu</strong> is an Associate Professor of
+                Computer Science at Columbia University and Co-Director of the
+                Data, Agents, and Processes Lab ({" "}
+                <a
+                  href="https://daplab.cs.columbia.edu/"
+                  className="text-[#407498] underline hover:text-[#24597E]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  DAPLab
+                </a>
+                ). His research explores the foundations of computing systems
+                that enable people and AI agents to effectively interact with,
+                analyze, and act upon data. His work spans databases,
+                visualization, human-computer interaction, and AI systems, with
+                a focus on building reliable and intelligent tools for human
+                data interaction. He has developed influential systems for
+                interactive data analysis, data cleaning, visualization, and
+                explanation, and his recent research investigates the
+                infrastructure needed for safe and effective agentic systems.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="section" id="program">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Schedule and Keynote Speakers</h2>
-          <p className="text-gray-700 mb-4">
-            TBD.
-          </p>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Schedule</h2>
+          <p className="text-gray-700 mb-4">TBD.</p>
         </section>
 
         <section className="section" id="reviewing-committee">
