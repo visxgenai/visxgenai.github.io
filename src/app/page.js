@@ -1,4 +1,5 @@
 import Home from "./sections/Home";
+import Schedule from "./sections/Schedule";
 
 export default function AIVisualizationWorkshop() {
   const organizers = [
@@ -441,10 +442,7 @@ export default function AIVisualizationWorkshop() {
           </div>
         </section>
 
-        <section className="section" id="program">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Schedule</h2>
-          <p className="text-gray-700 mb-4">TBD.</p>
-        </section>
+        <Schedule />
 
         <section className="section" id="reviewing-committee">
           <h2 className="text-3xl font-bold text-gray-800 mb-2">
