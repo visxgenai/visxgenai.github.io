@@ -54,7 +54,7 @@ const schedule = [
   },
   {
     time: "8:57",
-    title: "Sycamore: Exploring Grounded Synthetic Evaluation for Visualization Systems",
+    title: "Sycamore: Grounded Synthetic Evaluation for Visualization Systems",
     presenter: "Huyen N. Nguyen",
     mode: "In person",
   },
