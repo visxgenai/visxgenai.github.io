@@ -87,7 +87,7 @@ const schedule = [
   {
     time: "11:00",
     title: "Generate, Validate, Repair: Reliable Visual Data Reporting with LLM Agents",
-    presenter: "Vrushali Koli",
+    presenter: "Naga Datha Saikiran Battula",
     mode: "In person",
     challenge: true,
   },
