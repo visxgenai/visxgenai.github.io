@@ -231,7 +231,7 @@ const posters = [
   {
     submission: 6680,
     title: "Compiled Design, Verified Prose: An Agent That Writes Reports It Cannot See",
-    presenter: "Yuwei Xu",
+    presenter: "Yuwei Xiao",
     mode: "In person",
     challenge: true,
   },
