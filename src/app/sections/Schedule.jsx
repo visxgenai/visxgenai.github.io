@@ -5,7 +5,7 @@ const schedule = [
     highlight: true,
   },
   {
-    time: "8:10–9:05",
+    time: "8:10–9:06",
     title: "Paper Session I: Building & Evaluating Agentic Visualization Systems",
     highlight: true,
   },
@@ -17,51 +17,51 @@ const schedule = [
     challenge: true,
   },
   {
-    time: "8:15",
+    time: "8:17",
     title: "Toward AI VIS Co-Scientists: An Agent Harness for End-to-End Design of Scientific Visualization Applications",
     presenter: "Haichao Miao",
     mode: "In person",
   },
   {
-    time: "8:22",
+    time: "8:24",
     title: "CanvasObs: Structured Spatial Observation for Agent Editing in 2D Workspaces",
     presenter: "Jiahao Xu",
     mode: "In person",
   },
   {
-    time: "8:29",
+    time: "8:31",
     title: "AgentPulse: Visual Analytics of Communication and Activity in LLM-Based Multi-Agent Systems",
     presenter: "Kathrin Guckes",
     mode: "In person",
   },
   {
-    time: "8:36",
+    time: "8:38",
     title: "What Should the Agent Withhold? Designing Cognitive Friction Against Over-Reliance in Visualization Design Learning",
     presenter: "Jing Lu",
     mode: "Remote",
   },
   {
-    time: "8:43",
+    time: "8:45",
     title: "From Agents to Agency: Rethinking Human Agency in Agentic Visualization",
     presenter: "Narges Mahyar",
     mode: "In person",
   },
   {
-    time: "8:50",
+    time: "8:52",
     title: "Measuring the Collaboration, Not the Agent: An Evaluation Framework for Human-AI High-Dimensional Visual Analytics",
     presenter: "Xinxiao Li",
     mode: "Remote",
   },
   {
-    time: "8:57",
+    time: "8:59",
     title: "Sycamore: Grounded Synthetic Evaluation for Visualization Systems",
     presenter: "Huyen N. Nguyen",
     mode: "In person",
   },
   {
-    time: "9:05–9:30",
+    time: "9:06–9:30",
     title: "Coffee Break & Posters",
-    details: "25 min",
+    details: "24 min",
     posters: true,
     highlight: true,
   },
@@ -80,7 +80,7 @@ const schedule = [
     highlight: true,
   },
   {
-    time: "11:00–11:55",
+    time: "11:00–11:56",
     title: "Paper Session II: Trust, Alignment & Visual Perception of AI Models",
     highlight: true,
   },
@@ -98,43 +98,43 @@ const schedule = [
     mode: "In person",
   },
   {
-    time: "11:12",
+    time: "11:14",
     title: "Saying Uncertain, Showing Certain: Evidence–Action Mismatches in LLM Visualization Agents",
     presenter: "Arindam Bhattacharya",
     mode: "Remote",
   },
   {
-    time: "11:19",
+    time: "11:21",
     title: "Evaluating Human-LLM Alignment on Visualization Preference",
     presenter: "Tanmay Bakshi",
     mode: "Remote",
   },
   {
-    time: "11:26",
+    time: "11:28",
     title: "On Interpretability Methods for Vision Language Models in Visualization",
     presenter: "Pranava Madhyastha",
     mode: "Remote",
   },
   {
-    time: "11:33",
+    time: "11:35",
     title: "Where LLMs Fail with Visualization DSLs",
     presenter: "Chang Han",
     mode: "In person",
   },
   {
-    time: "11:40",
+    time: "11:42",
     title: "Graphical Perception Across Encoding Channels in Multimodal LLMs",
     presenter: "Markus Wallinger",
     mode: "In person",
   },
   {
-    time: "11:47",
+    time: "11:49",
     title: "A Stevens' Power Law Measurement for Multimodal Large Language Models",
     presenter: "Kaichun Yang",
     mode: "In person",
   },
   {
-    time: "11:55–12:00",
+    time: "11:56–12:00",
     title: "Closing Remarks",
     details: "Organizers",
     highlight: true,
@@ -338,7 +338,7 @@ export default function Schedule() {
           Accepted Posters
         </h3>
         <p className="text-gray-600 mb-4" id="posters-description">
-          Poster sessions: 9:05–9:30 and 10:30–11:00 during the coffee breaks.
+          Poster sessions: 9:06–9:30 and 10:30–11:00 during the coffee breaks.
         </p>
         <div
           className="overflow-x-auto rounded-lg border border-gray-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#407498]"
