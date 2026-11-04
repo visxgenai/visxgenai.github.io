@@ -5,13 +5,13 @@ const schedule = [
     highlight: true,
   },
   {
-    time: "8:10–9:06",
+    time: "8:10–9:20",
     title: "Paper Session I: Building & Evaluating Agentic Visualization Systems",
     highlight: true,
   },
   {
     time: "8:10",
-    title: "LM Agents for Visualization Generation and Vision-First Evaluation",
+    title: "LLM Agents for Visualization Generation and Vision-First Evaluation",
     presenter: "Tahsen Islam Sajon",
     mode: "Remote",
     challenge: true,
@@ -59,82 +59,82 @@ const schedule = [
     mode: "In person",
   },
   {
-    time: "9:06–9:30",
-    title: "Coffee Break & Posters",
-    details: "24 min",
-    posters: true,
-    highlight: true,
-  },
-  {
-    time: "9:30–10:30",
-    title: "Keynote Talk",
-    details: "Title to be announced",
-    presenter: "Eugene Wu",
-    highlight: true,
-  },
-  {
-    time: "10:30–11:00",
-    title: "Coffee Break & Posters",
-    details: "30 min",
-    posters: true,
-    highlight: true,
-  },
-  {
-    time: "11:00–11:56",
-    title: "Paper Session II: Trust, Alignment & Visual Perception of AI Models",
-    highlight: true,
-  },
-  {
-    time: "11:00",
+    time: "9:06",
     title: "Generate, Validate, Repair: Reliable Visual Data Reporting with LLM Agents",
     presenter: "Naga Datha Saikiran Battula",
     mode: "In person",
     challenge: true,
   },
   {
-    time: "11:07",
+    time: "9:13",
     title: "How Do Artificial Agents Make Decisions in Light of Visual Data?",
     presenter: "Shayan Monadjemi",
     mode: "In person",
   },
   {
-    time: "11:14",
+    time: "9:20–10:00",
+    title: "Coffee Break & Posters",
+    details: "40 min; coffee served from 9:30",
+    posters: true,
+    highlight: true,
+  },
+  {
+    time: "10:00–10:50",
+    title: "Keynote Talk",
+    details: "Title to be announced",
+    presenter: "Eugene Wu, Columbia University",
+    highlight: true,
+  },
+  {
+    time: "10:50–11:20",
+    title: "Break & Posters",
+    details: "30 min",
+    posters: true,
+    highlight: true,
+  },
+  {
+    time: "11:20–12:02",
+    title: "Paper Session II: Trust, Alignment & Visual Perception of AI Models",
+    highlight: true,
+  },
+  {
+    time: "11:20",
     title: "Saying Uncertain, Showing Certain: Evidence–Action Mismatches in LLM Visualization Agents",
     presenter: "Arindam Bhattacharya",
     mode: "Remote",
   },
   {
-    time: "11:21",
+    time: "11:27",
     title: "Evaluating Human-LLM Alignment on Visualization Preference",
     presenter: "Tanmay Bakshi",
     mode: "Remote",
   },
   {
-    time: "11:28",
+    time: "11:34",
     title: "On Interpretability Methods for Vision Language Models in Visualization",
     presenter: "Pranava Madhyastha",
     mode: "Remote",
   },
   {
-    time: "11:35",
+    time: "11:41",
     title: "Where LLMs Fail with Visualization DSLs",
     presenter: "Chang Han",
     mode: "In person",
   },
   {
-    time: "11:42",
+    time: "11:48",
     title: "Graphical Perception Across Encoding Channels in Multimodal LLMs",
     presenter: "Markus Wallinger",
     mode: "In person",
   },
   {
-    time: "11:49",
+    time: "11:55",
     title: "A Stevens' Power Law Measurement for Multimodal Large Language Models",
     presenter: "Kaichun Yang",
     mode: "In person",
   },
   {
-    time: "11:56–12:00",
+    time: "12:02–12:05",
     title: "Closing Remarks",
     details: "Organizers",
     highlight: true,
@@ -254,7 +254,7 @@ export default function Schedule() {
         Schedule
       </h2>
       <p className="text-gray-600 mb-4" id="schedule-description">
-        November 9, 2026 · All times are local to Boston (EST, UTC−5).
+        November 9, 2026 · America South Ballroom · All times are local to Boston (EST, UTC−5).
       </p>
       <div
         className="overflow-x-auto rounded-lg border border-gray-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#407498]"
@@ -338,7 +338,7 @@ export default function Schedule() {
           Accepted Posters
         </h3>
         <p className="text-gray-600 mb-4" id="posters-description">
-          Poster sessions: 9:06–9:30 and 10:30–11:00 during the coffee breaks.
+          Poster sessions: 9:20–10:00 and 10:50–11:20 during the two breaks.
         </p>
         <div
           className="overflow-x-auto rounded-lg border border-gray-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#407498]"
