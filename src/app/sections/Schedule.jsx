@@ -32,7 +32,7 @@ const schedule = [
     time: "8:31",
     title: "AgentPulse: Visual Analytics of Communication and Activity in LLM-Based Multi-Agent Systems",
     presenter: "Kathrin Guckes",
-    mode: "In person",
+    mode: "Remote",
   },
   {
     time: "8:38",
@@ -42,8 +42,8 @@ const schedule = [
   },
   {
     time: "8:45",
-    title: "From Agents to Agency: Rethinking Human Agency in Agentic Visualization",
-    presenter: "Narges Mahyar",
+    title: "How Do Artificial Agents Make Decisions in Light of Visual Data?",
+    presenter: "Shayan Monadjemi",
     mode: "In person",
   },
   {
@@ -67,8 +67,8 @@ const schedule = [
   },
   {
     time: "9:13",
-    title: "How Do Artificial Agents Make Decisions in Light of Visual Data?",
-    presenter: "Shayan Monadjemi",
+    title: "From Agents to Agency: Rethinking Human Agency in Agentic Visualization",
+    presenter: "Narges Mahyar",
     mode: "In person",
   },
   {
@@ -135,7 +135,7 @@ const schedule = [
   },
   {
     time: "12:02–12:05",
-    title: "Closing Remarks",
+    title: "Closing Remarks & Awards",
     details: "Organizers",
     highlight: true,
   },
