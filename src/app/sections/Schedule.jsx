@@ -5,7 +5,7 @@ const schedule = [
     highlight: true,
   },
   {
-    time: "8:10–9:20",
+    time: "8:10–9:27",
     title: "Paper Session I: Building & Evaluating Agentic Visualization Systems",
     highlight: true,
   },
@@ -72,9 +72,15 @@ const schedule = [
     mode: "In person",
   },
   {
-    time: "9:20–10:00",
+    time: "9:20",
+    title: "Where LLMs Fail with Visualization DSLs",
+    presenter: "Chang Han",
+    mode: "In person",
+  },
+  {
+    time: "9:30–10:00",
     title: "Coffee Break & Posters",
-    details: "40 min; coffee served from 9:30",
+    details: "30 min",
     posters: true,
     highlight: true,
   },
@@ -86,56 +92,43 @@ const schedule = [
     highlight: true,
   },
   {
-    time: "10:50–11:20",
-    title: "Break & Posters",
-    details: "30 min",
-    posters: true,
-    highlight: true,
-  },
-  {
-    time: "11:20–12:02",
+    time: "10:50–11:25",
     title: "Paper Session II: Trust, Alignment & Visual Perception of AI Models",
     highlight: true,
   },
   {
-    time: "11:20",
+    time: "10:50",
     title: "Saying Uncertain, Showing Certain: Evidence–Action Mismatches in LLM Visualization Agents",
     presenter: "Arindam Bhattacharya",
     mode: "Remote",
   },
   {
-    time: "11:27",
+    time: "10:57",
     title: "Evaluating Human-LLM Alignment on Visualization Preference",
     presenter: "Tanmay Bakshi",
     mode: "Remote",
   },
   {
-    time: "11:34",
+    time: "11:04",
     title: "On Interpretability Methods for Vision Language Models in Visualization",
     presenter: "Pranava Madhyastha",
     mode: "Remote",
   },
   {
-    time: "11:41",
-    title: "Where LLMs Fail with Visualization DSLs",
-    presenter: "Chang Han",
-    mode: "In person",
-  },
-  {
-    time: "11:48",
+    time: "11:11",
     title: "Graphical Perception Across Encoding Channels in Multimodal LLMs",
-    presenter: "Markus Wallinger",
+    presenter: "Jakob Tobias Zöbl",
     mode: "In person",
   },
   {
-    time: "11:55",
+    time: "11:18",
     title: "A Stevens' Power Law Measurement for Multimodal Large Language Models",
     presenter: "Kaichun Yang",
     mode: "In person",
   },
   {
-    time: "12:02–12:05",
-    title: "Closing Remarks & Awards",
+    time: "11:25–11:30",
+    title: "Closing Remarks",
     details: "Organizers",
     highlight: true,
   },
@@ -338,7 +331,7 @@ export default function Schedule() {
           Accepted Posters
         </h3>
         <p className="text-gray-600 mb-4" id="posters-description">
-          Poster sessions: 9:20–10:00 and 10:50–11:20 during the two breaks.
+          Poster session: 9:30–10:00 during the coffee break. Posters stay up in the America Foyer for the Tuesday evening VIS poster reception.
         </p>
         <div
           className="overflow-x-auto rounded-lg border border-gray-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#407498]"
