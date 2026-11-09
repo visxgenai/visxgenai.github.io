@@ -9,7 +9,7 @@ export default function AIVisualizationWorkshop() {
     { name: "Shivam Raval", affiliation: "Harvard University" },
     { name: "Pan Hao", affiliation: "University of Minnesota-Twin Cities" },
     { name: "Qianwen Wang", affiliation: "University of Minnesota-Twin Cities" },
-    { name: "Vidya Setlur", affiliation: "Tableau Research" },
+    { name: "Vidya Setlur", affiliation: "University of Michigan / Tableau Research" },
   ];
 
   const reviewingCommittee = [
